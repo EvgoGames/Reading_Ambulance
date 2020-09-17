@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<!-- Created by pdf2htmlEX (https://github.com/coolwanglu/pdf2htmlex) -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="additional_files/jquery-3.3.1.min.js"></script>
+<meta charset="utf-8"/>
+<meta name="generator" content="pdf2htmlEX"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" media="all" href="additional_files/css/styles-m.css">
+    <link rel="stylesheet" type="text/css" media="all" href="additional_files/css/scroll.css">
+    <link rel="stylesheet" type="text/css" media="all" href="additional_files/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="additional_files/css/styles-l.css">
+    <link rel="stylesheet" type="text/css" media="all" href="additional_files/css/styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="additional_files/css/header.css">
+     <style type="text/css">
+@media (min-width: 768px), print {
+ .page-header {
+   background-color:#ebbb57
+}
+.nav-sections {
+   background-color:#ebbb57
+}
+.logo img{
+   width:454px;
+}
+.navigation .level0.active>.level-top, .navigation .level0.has-active{
+   background: #1010c6;
+}
+.header.content{
+padding:0px;
+}
+.header .links li a, .page-header .switcher{
+color: #1010c6 !important;
+}
+.header-notification{
+        font-family:marta;
+max-width:425px;
+	font-size: 18px;
+	color: #020202;
+	text-shadow: 		
+		-0   -2px 2px #FFFFFF,
+		 0   -2px 2px #FFFFFF,
+		-0    2px 2px #FFFFFF,
+		 0    2px 2px #FFFFFF,
+		-2px -0   2px #FFFFFF,
+		 2px -0   2px #FFFFFF,
+		-2px  0   2px #FFFFFF,
+		 2px  0   2px #FFFFFF,
+		-1px -2px 2px #FFFFFF,
+		 1px -2px 2px #FFFFFF,
+		-1px  2px 2px #FFFFFF,
+		 1px  2px 2px #FFFFFF,
+		-2px -1px 2px #FFFFFF,
+		 2px -1px 2px #FFFFFF,
+		-2px  1px 2px #FFFFFF,
+		 2px  1px 2px #FFFFFF,
+		-2px -2px 2px #FFFFFF,
+		 2px -2px 2px #FFFFFF,
+		-2px  2px 2px #FFFFFF,
+		 2px  2px 2px #FFFFFF,
+		-2px -2px 2px #FFFFFF,
+		 2px -2px 2px #FFFFFF,
+		-2px  2px 2px #FFFFFF,
+		 2px  2px 2px #FFFFFF;
+}
+#search{
+background:white;
+color:#7c7c7c;
+
+}
+.page-header .header.panel{
+background:#f4a90b;
+}
+.page-header .panel.wrapper{
+border-bottom:0px;
+}
+#ui-id-2{
+border-top:1px solid #e87b00;
+}
+.field.search{
+width:90%;
+}
+</style>
+<style type="text/css">
+	.interactive{cursor:pointer;}
+	
+	.word {
+	position:relative;
+	color: 1a2b5e;
+	border-radius: 5px; 
+}
+
+#word3{
+	/*height:650px;*/
+	/*width:auto;*/
+	height: -moz-calc(100vh - 183px);
+    height: -webkit-calc(100vh - 183px);
+    height: calc(100% - 183px);
+    overflow:hidden;
+}	
+	
+	
+	
+	table{
+	position:relative;
+	top:20px;
+	border-collapse: collapse;
+	/*   border: 3px solid black;*/
+	box-shadow: 3px 3px 3px 3px #3a3a3a;
+	border: none;
+ /*   width: 20000px;*/
+ /*   height: 300px;*/
+    background-color: white;
+	table-layout:fixed;
+}
+#word3 td {
+	padding: 10px;
+	border: 4px solid lightgray;
+	font-size:18px;
+	color: 1a2b5e;
+	/*width: 50%;*/
+	width: 150px;
+	text-align: center;
+
+}
+#word3 th {
+	padding: 15px;
+	padding-left: 20px;
+	border: 4px solid lightgray;
+	font-size:35px;
+	color: #eb0a8c;
+	width: 500px !important;
+	text-align: center !important;
+}
+#word3 tr {
+	padding: 15px;
+	padding-left: 20px;
+	border: 4px solid lightgray;
+	font-size:25px;
+	color: 1a2b5e;
+}
+.unit {
+/*
+	width: 254px;
+	height: 101px;*/
+	width: 309px;
+	height: 120px;
+	display: inline-block;
+	position: relative;
+}
+
+.unit img{
+	left: 0px;
+	position: absolute;
+}
+
+.unit span{
+	position: relative;
+	top: 21%;
+}
+.unit_big {
+	width: 419px;
+	height: 101px;
+	display: inline-block;
+	position: relative;
+}
+.unit_big img{
+	left: 0px;
+	position: absolute;
+}
+
+.unit_big span{
+	position: relative;
+	top: 21%;
+}
+#small {
+	font-size:16px;
+}
+
+.number{
+	text-align: left !important;
+	font-weight: bold;
+	font-size:13px;
+	/*color: #eb0a8c*/
+	color: black;
+	position: absolute;
+	left: 1%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card {
+	position:relative;
+	display:inline-block;
+	margin:0px 1px;
+	width: 25px;
+	height: 25px;
+	/*background-color: white;*/
+	background-color: #fbd7e7;	
+	text-align: center;
+	vertical-align: center;
+	box-shadow: 1px 1px 3px 1px #3a3a3a;
+	border-radius: 5px; 
+	padding: 8px;
+	margin: 10px;
+}
+
+#les1{
+	float: left;
+	width:10%;
+	top: 1%;
+	left: 1%;
+	position: absolute;
+	display:inline-block;
+}
+.headphones img{
+	left: 0px;
+	position: absolute;
+}
+.num {
+	display: inline-block;
+	text-align: center !important;
+	vertical-align: center !important;
+	font-weight: bold;
+	position: relative;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size:13px;
+	/*color: #eb0a8c;*/
+	color: black;
+	top: 20%
+}
+.headphones {
+	width: 51px;
+	height: 52px;
+	display: inline-block;
+	position: relative;
+}
+.line{
+	background-color: #fbd7e7;	
+}
+.line span{
+	margin-right: 3%;
+	margin-left: 3%;
+}
+.line_button{
+	width: 74%;
+	margin-left: 13%;
+	box-shadow: 1px 1px 3px 1px #3a3a3a;
+	border-radius: 5px; 
+}
+.ex12_12{
+	width: 50%;
+	/*margin-left: 23%;*/
+	margin-left: 28%;
+	box-shadow: 1px 1px 3px 1px #3a3a3a;
+	border-radius: 5px;
+	background-color: #fbd7e7;	
+}
+.marg {
+	/*margin-right: 100px;*/
+	margin: 10px;
+	width: 23%;
+	position:relative;
+	display:inline-block;
+	box-shadow: 1px 1px 3px 1px #3a3a3a;
+	border-radius: 5px;
+	background-color: #fbd7e7;
+	}
+.empty_block{
+margin: 10px;
+	width: 23%;
+	position:relative;
+	display:inline-block;
+}
+.marg_left{
+left:15%;
+}	
+.bot{
+
+	display: inline-block;
+	position: relative;}
+.text_left{text-align: left;}
+@font-face {
+    font-family: phontm;
+    src: url('additional_files/fonts/PHONTM__.otf');
+}
+.phonetic{
+	font-family: phontm;
+}
+.ex_11_9{
+display:inline-block;
+}
+.ex12_12_left{
+	float: left;
+	top: 5%;
+}
+.ex12_12_right{
+	float: right;
+	top: 5%;
+}
+</style>
+
+
+<script>
+$( document ).ready(function() {
+	$('.interactive').on('click', function(e){
+		e.preventDefault();
+		new Audio('additional_files/'+this.id+'.mp3').play();
+	});
+	$('#switcher-language-trigger').on('click', function(){		
+		if ($('#switcher-language-trigger strong span').text() == 'UA'){
+			$('#header-top-menu li:eq(0)').html("<a href='https://ntbooks.pro/about-us'>О нас</a>");
+			$('#header-top-menu li:eq(1)').html("<a href='https://ntbooks.pro/payment'>Оплата</a>");
+			$('#header-top-menu li:eq(2)').html("<a href='https://ntbooks.pro/discounts'>Скидки</a>");
+			$('#header-top-menu li:eq(3)').html("<a href='https://ntbooks.pro/delivery'>Доставка</a>");
+			$('#header-top-menu li:eq(4)').html("<a href='https://ntbooks.pro/terms-of-use'>Пользовательское соглашение</a>");
+			$('#header-top-menu li:eq(5)').html("<a href='https://ntbooks.pro/contact'>Обратная связь</a>");
+			$('.minicart-wrapper .showcart span:eq(0)').html("Корзина");
+			$('.search div input').attr("placeholder", "Ищите тут...");
+			$('.ui-menu li:eq(0) a').html("Английский");
+			$('.ui-menu li:eq(1) a').html("Немецкий");
+			$('.ui-menu li:eq(2) a').html("Французский");
+			$('.ui-menu li:eq(3) a').html("Польский");
+			$('#switcher-language-trigger strong span').html('RU');
+		}else{
+			$('#header-top-menu li:eq(0)').html("<a href='https://ntbooks.pro/about-us'>Про нас</a>");
+			$('#header-top-menu li:eq(1)').html("<a href='https://ntbooks.pro/payment'>Оплата</a>");
+			$('#header-top-menu li:eq(2)').html("<a href='https://ntbooks.pro/discounts'>Знижки</a>");
+			$('#header-top-menu li:eq(3)').html("<a href='https://ntbooks.pro/delivery'>Доставка</a>");
+			$('#header-top-menu li:eq(4)').html("<a href='https://ntbooks.pro/terms-of-use'>Угода користувача</a>");
+			$('#header-top-menu li:eq(5)').html("<a href='https://ntbooks.pro/contact'>Зворотній зв'язок</a>");
+			$('.minicart-wrapper .showcart span:eq(0)').html("Кошик");
+			$('.search div input').attr("placeholder", "Шукайте тут...");
+			$('.ui-menu li:eq(0) a').html("Англійська");
+			$('.ui-menu li:eq(1) a').html("Німецька");
+			$('.ui-menu li:eq(2) a').html("Французька");
+			$('.ui-menu li:eq(3) a').html("Польска");
+			$('#switcher-language-trigger strong span').html('UA');
+		}
+	});
+});
+</script>
+<title>Ambulance</title>
+
+</head>
+<body style="overflow-x: hidden;">
+	<div class="page-wrapper">
+       <header class="page-header"><div class="panel wrapper"><div class="panel header"><ul id="header-top-menu">
+	<li class="nav item">
+		<a href="/about-us">Про нас</a>
+	</li>
+	<li class="nav item">
+		<a href="/payment">Оплата</a>
+	</li>
+	<li class="nav item">
+		<a href="/discounts">Знижки</a>
+	</li>
+	<li class="nav item">
+		<a href="/delivery">Доставка</a>
+	</li>
+</ul>
+<span class="header-notification">
+    Учбова література з іноземних мов </span>
+<a class="action skip contentarea" href="#contentarea"><span>Skip to Content</span></a>
+<ul id="header-phones">
+	<li>+38 (050) 301 19 73</li>
+	<li>+38 (098) 828 26 79 <a class="tlg" title="Telegram" href="tg://resolve?domain=ntbooks"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="16" height="16"
+viewBox="0 0 48 48"
+style="enable-background:new 0 0 48 48;; fill:#000000;"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="24" y1="658" x2="24" y2="618.146" gradientTransform="matrix(1 0 0 -1 0 662)">	<stop offset="0" style="stop-color:#42BCE8"></stop>	<stop offset="1" style="stop-color:#23A7DC"></stop></linearGradient><circle style="fill:url(#SVGID_1_);" cx="24" cy="24" r="20"></circle><path style="fill:#FFFFFF;" d="M34.176,14.811l-3.817,19.492c0,0-0.534,1.352-2.002,0.703l-8.809-6.84l-3.203-1.568l-5.392-1.838	c0,0-0.828-0.297-0.908-0.946c-0.08-0.649,0.934-1,0.934-1l21.436-8.516C32.414,14.297,34.176,13.513,34.176,14.811z"></path><path style="fill:#D2E5F1;" d="M18.87,34.083c0,0-0.257-0.024-0.578-1.052c-0.32-1.027-1.949-6.434-1.949-6.434L29.29,18.27	c0,0,0.747-0.46,0.721,0c0,0,0.133,0.081-0.267,0.46s-10.171,9.273-10.171,9.273"></path><path style="fill:#B5CFE4;" d="M22.925,30.788l-3.484,3.217c0,0-0.272,0.209-0.57,0.078l0.667-5.976"></path></svg>
+</a>
+<a title="Viber" href="viber://chat?number=+380988282679"><svg class="viber-icon" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 247.7 272.7" style="enable-background:new 0 0 247.7 272.7;" xml:space="preserve">
+                      <path fill="#7D3DAF" d="M241.7,53.9c-4.9-19.2-29.8-43.1-49.6-47.5c-45.3-8.6-91.2-8.6-136.4,0C35.9,10.9,10.9,34.7,6.1,53.9
+                                        c-8.1,37.1-8.1,74.8,0,112c4.9,19.2,29.8,43.1,49.6,47.5c0,0,0,0,0,0c0.9,0.2,1.5,0.9,1.5,1.8v54.4c0,2.7,3.3,4.1,5.2,2.1
+                                        l25.8-26.5c0,0,20.6-21.1,24.3-24.9c0.4-0.4,0.9-0.6,1.4-0.6c26.1,0.7,52.2-1.4,78.1-6.3c19.8-4.4,44.7-28.3,49.6-47.5
+                                        C249.8,128.7,249.8,91.1,241.7,53.9z M192.8,168.7c-4,8.4-9.7,15.4-18,19.9c-2.3,1.3-5.1,1.7-7.8,2.5c-3-0.9-5.9-1.5-8.6-2.7
+                                        c-27.9-11.6-53.6-26.5-74-49.4c-11.6-13-20.6-27.7-28.3-43.3c-3.6-7.4-6.7-15-9.8-22.7C43.4,66,47.6,58.8,52,53.6
+                                        c4.1-4.9,9.5-8.7,15.2-11.4c4.5-2.2,8.9-0.9,12.2,2.9c7.1,8.3,13.6,16.9,18.9,26.5c3.3,5.9,2.4,13.1-3.5,17.1
+                                        c-1.4,1-2.7,2.1-4.1,3.2c-1.2,1-2.3,1.9-3.1,3.2c-1.5,2.4-1.5,5.2-0.6,7.8c7.3,20,19.5,35.5,39.6,43.9c3.2,1.3,6.4,2.9,10.2,2.5
+                                        c6.2-0.7,8.2-7.5,12.6-11.1c4.3-3.5,9.7-3.5,14.3-0.6c4.6,2.9,9,6,13.4,9.2c4.3,3.1,8.6,6.1,12.6,9.6
+                                        C193.6,159.6,194.9,164.1,192.8,168.7z M156.7,103.6c-1.7,0-1.1,0-0.4,0c-2.8-0.1-4.3-1.7-4.6-4.4c-0.2-2-0.4-3.9-0.9-5.8
+                                        c-0.9-3.7-2.9-7.2-6.1-9.5c-1.5-1.1-3.2-1.9-4.9-2.4c-2.2-0.6-4.6-0.5-6.8-1c-2.4-0.6-3.8-2.6-3.4-4.8c0.3-2.1,2.4-3.7,4.6-3.5
+                                        c14.2,1,24.3,8.3,25.7,25c0.1,1.2,0.2,2.4,0,3.5c-0.4,1.8-1.7,2.8-3.1,3C157.1,103.6,157,103.6,156.7,103.6z M147.9,65.5
+                                        c-4.3-2.1-9-3.4-13.8-4.2c-2.1-0.3-4.2-0.6-6.3-0.8c-2.5-0.4-3.9-2-3.8-4.5c0.1-2.3,1.8-4,4.4-3.9c8.4,0.5,16.5,2.3,23.9,6.2
+                                        c15.2,8,23.8,20.7,26.3,37.6c0.1,0.8,0.3,1.5,0.4,2.3c0.1,1.9,0.2,3.8,0.4,6.3c-0.1,0.5-0.1,1.5-0.4,2.5c-1,3.7-6.5,4.1-7.8,0.4
+                                        c-0.4-1.1-0.4-2.3-0.4-3.5c0-7.7-1.7-15.5-5.6-22.2C161.2,74.8,155.1,69,147.9,65.5z M194.7,117.7c-2.9,0-4.2-2.4-4.4-5
+                                        c-0.4-5.2-0.6-10.4-1.4-15.6c-3.8-27.2-25.5-49.7-52.5-54.5c-4.1-0.7-8.2-0.9-12.4-1.4c-2.6-0.3-6-0.4-6.6-3.7
+                                        c-0.5-2.7,1.8-4.9,4.4-5c0.7,0,1.4,0,2.1,0c2.4,0,2.1,0.1,0.1,0c36.5,1.1,66.4,25.3,72.8,61.4c1.1,6.2,1.5,12.4,2,18.7
+                                        C199.1,115.2,197.6,117.7,194.7,117.7z"></path>
+                    </svg></a></li>
+</ul>
+<div class="switcher language switcher-language" data-ui-id="language-switcher" id="switcher-language">
+    <strong class="label switcher-label"><span>Language</span></strong>
+    <div class="actions dropdown options switcher-options">
+        <div class="action toggle switcher-trigger"
+             id="switcher-language-trigger"
+             data-mage-init='{"dropdown":{}}'
+             data-toggle="dropdown"
+             data-trigger-keypress-button="true">
+            <strong class="view-ua_ua">
+                <span>UA</span>
+            </strong>
+        </div>
+        <ul class="dropdown switcher-dropdown"
+            data-target="dropdown">
+                                                                            <li class="view-ua_ru switcher-option">
+                        <a href="#" data-post='{"action":"https:\/\/ntbooks.pro\/stores\/store\/redirect\/","data":{"___store":"ua_ru","___from_store":"ua_ua","uenc":"aHR0cHM6Ly9udGJvb2tzLnByby9lbmdsaXNoLmh0bWw_X19fc3RvcmU9dWFfcnU,"}}'>
+                            RU                        </a>
+                    </li>
+                                    </ul>
+    </div>
+</div>
+<ul class="header links"><li class="authorization-link">
+    <a href="https://ntbooks.pro/customer/account/login/referer/aHR0cHM6Ly9udGJvb2tzLnByby9lbmdsaXNoLmh0bWw%2C/">
+        Увійти    </a>
+</li>
+</ul></div></div><div class="header content"><div class="header-img-right">
+	<img src='additional_files/pictures/left.png'/>
+</div>
+<div class="header-img-left">
+	<img src='additional_files/pictures/left.png'/>
+</div>
+<span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
+    <a class="logo" href="https://ntbooks.pro/" title="Видавництво New Time Books">
+        <img src="additional_files/pictures/logo___2.png"
+             title="Видавництво New Time Books"
+             alt="Видавництво New Time Books"
+             width="650"             height="94"        />
+    </a>
+
+ <div data-block="minicart" class="minicart-wrapper">
+                    <a class="action showcart" href="https://ntbooks.pro/checkout/cart/" data-bind="scope: 'minicart_content'">
+                        <span class="text">Корзина</span>
+                        <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+            <span class="counter-number"><!-- ko text: getCartParam('summary_count') -->0<!-- /ko --></span>
+                        <span class="counter-label">
+            <!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+            </span>
+                        </span>
+                    </a>
+            <div class="block block-minicart"
+             data-role="dropdownDialog"
+             data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            </div>
+                    </div>
+        <script>
+                       
+window.checkout = {
+    "shoppingCartUrl": "https:\/\/ntbooks.pro\/checkout\/cart\/",
+    "checkoutUrl": "https:\/\/ntbooks.pro\/checkout\/",
+    "updateItemQtyUrl": "http:\/\/ntbooks.pro\/checkout\/sidebar\/updateItemQty\/",
+    "removeItemUrl": "http:\/\/ntbooks.pro\/checkout\/sidebar\/removeItem\/",
+    "imageTemplate": "Magento_Catalog\/product\/image_with_borders",
+    "baseUrl": "http:\/\/ntbooks.pro\/",
+    "minicartMaxItemsVisible": 5,
+    "websiteId": "1",
+    "maxItemsToDisplay": 10,
+    "customerLoginUrl": "https:\/\/ntbooks.pro\/customer\/account\/login\/referer\/aHR0cDovL250Ym9va3MucHJvLw%2C%2C\/",
+    "isRedirectRequired": true,
+    "autocomplete": "off",
+    "captcha": {
+        "user_login": {
+            "isCaseSensitive": false,
+            "imageHeight": 50,
+            "imageSrc": "",
+            "refreshUrl": "http:\/\/ntbooks.pro\/captcha\/refresh\/",
+            "isRequired": false
+        },
+        "guest_checkout": {
+            "isCaseSensitive": false,
+            "imageHeight": 50,
+            "imageSrc": "",
+            "refreshUrl": "http:\/\/ntbooks.pro\/captcha\/refresh\/",
+            "isRequired": false
+        }
+    }
+};
+                    </script>
+    <script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals","children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}}}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://ntbooks.pro/pub/static/version1556875232/frontend/Newtime/default/uk_UA/images/loader-1.gif"
+        }
+    }
+    </script>
+</div>
+
+
+<div class="block block-search">
+    <div class="block block-title"><strong>Пошук</strong></div>
+    <div class="block block-content">
+        <form class="form minisearch" id="search_mini_form" action="https://ntbooks.pro/catalogsearch/result/" method="get">
+            <div class="field search">
+                <label class="label" for="search" data-role="minisearch-label">
+                    <span>Пошук</span>
+                </label>
+                <div class="control">
+                    <input id="search"
+                           data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"https://ntbooks.pro/search/ajax/suggest/",
+                                "destinationSelector":"#search_autocomplete"}
+                           }'
+                           type="text"
+                           name="q"
+                           value=""
+                           placeholder="Шукайте тут..."
+                           class="input-text"
+                           maxlength="128"
+                           role="combobox"
+                           aria-haspopup="false"
+                           aria-autocomplete="both"
+                           autocomplete="off"/>
+                    <div id="search_autocomplete" class="search-autocomplete"></div>
+                    <div class="nested">
+    <a class="action advanced" href="https://ntbooks.pro/catalogsearch/advanced/" data-action="advanced-search">
+        Розширений пошук    </a>
+</div>
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit"
+                        title="Пошук"
+                        class="action search">
+                    <span>Пошук</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<ul class="compare wrapper"><li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+    <a class="action compare no-display" title="Порівняти товари"
+       data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"
+    >
+        Порівняти товари        <span class="counter qty" data-bind="text: compareProducts().countCaption"></span>
+    </a>
+</li>
+<script type="text/x-magento-init">
+{"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": {"components":{"compareProducts":{"component":"Magento_Catalog\/js\/view\/compare-products"}}}}}
+</script>
+</ul></div></header>
+        <div class="sections nav-sections">
+            <div class="section-items nav-sections-items" role="tablist">
+                <div class="section-item-title nav-sections-item-title active" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.menu" aria-selected="false" aria-expanded="true" tabindex="0">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu">Меню</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content" role="tabpanel" aria-hidden="false">
+                    <nav class="navigation" role="navigation">
+                        <ul id="ui-id-2" class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" aria-activedescendant="ui-id-5">                            
+                            <li class="level0 active nav-1 category-item first level-top ui-menu-item" role="presentation"><a href="http://ntbooks.pro/english.html" class="level-top ui-corner-all" id="ui-id-4" tabindex="-1" role="menuitem"><span>Англійська</span></a></li>
+                            <li class="level0 nav-2 category-item level-top ui-menu-item" role="presentation"><a href="http://ntbooks.pro/deutsch.html" class="level-top ui-corner-all" id="ui-id-5" tabindex="-1" role="menuitem"><span>Німецька</span></a></li>
+                            <li class="level0 nav-3 category-item level-top ui-menu-item" role="presentation"><a href="http://ntbooks.pro/french.html" class="level-top ui-corner-all" id="ui-id-6" tabindex="-1" role="menuitem"><span>Французька</span></a></li>
+                            <li class="level0 nav-4 category-item level-top ui-menu-item"
+                                role="presentation"><a href="http://ntbooks.pro/polish.html" class="level-top ui-corner-all" id="ui-id-7" tabindex="-1" role="menuitem"><span>Польска</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="section-item-title nav-sections-item-title" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.links" aria-selected="false" aria-expanded="false" tabindex="0">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.links">Учётная запись</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.links" data-role="content" role="tabpanel" aria-hidden="true" style="display: none;">
+                    <!-- Account links -->
+                    <ul class="header links">
+                        <li class="greet welcome" data-bind="scope: 'customer'">
+                            <!-- ko if: customer().fullname  -->
+                            <!-- /ko -->
+                            <!-- ko ifnot: customer().fullname  -->
+                            <span data-bind="html:&quot;&quot;"></span>
+                            <!-- /ko -->
+                        </li>
+
+                        <li class="authorization-link">
+                            <a href="http://ntbooks.pro/customer/account/login/referer/aHR0cDovLzE5Mi4xNjguMS4xMjQvbWFnZW50bzIv/">
+        Войти    </a>
+                        </li>
+                        <li><a href="http://ntbooks.pro/customer/account/create/">Зарегистрироваться</a></li>
+                    </ul>
+                </div>
+                <div class="section-item-title nav-sections-item-title" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.settings" aria-selected="false" aria-expanded="false" tabindex="0">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.settings">Настройки</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.settings" data-role="content" role="tabpanel" aria-hidden="true" style="display: none;">
+                    <div class="switcher language switcher-language" data-ui-id="language-switcher" id="switcher-language-nav">
+                        <strong class="label switcher-label"><span>Язык</span></strong>
+                        <div class="actions dropdown options switcher-options">
+                            <div class="action toggle switcher-trigger" id="switcher-language-trigger-nav" data-toggle="dropdown" data-trigger-keypress-button="true" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0">
+                                <strong class="view-ua_ua">
+                <span>Укр</span>
+            </strong>
+                            </div>
+                            <ul class="dropdown switcher-dropdown" data-target="dropdown" aria-hidden="true">
+                                <li class="view-ua_ru switcher-option">
+                                    <a href="#" data-post="{&quot;action&quot;:&quot;http:\/\/ntbooks.pro/\/stores\/store\/redirect\/&quot;,&quot;data&quot;:{&quot;___store&quot;:&quot;ua_ru&quot;,&quot;___from_store&quot;:&quot;ua_ua&quot;,&quot;uenc&quot;:&quot;aHR0cDovLzE5Mi4xNjguMS4xMjQvbWFnZW50bzIvP19fX3N0b3JlPXVhX3J1&quot;}}">
+                            UA-RU                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+	
+	
+	
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+	
+	<div id="page-container" style="width: auto;max-width: 1281px; margin-left:auto; margin-right:auto;overflow-x: hidden;margin-left: auto;   margin-right: auto;">
+	<div style="text-align:center;">
+		<span style="font-size:16px;">Ambulance</span>
+	</div>
+	<div id="word3" class="word">
+		<table>
+			<th colspan="2">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 1.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="2">
+					<span class='number'>1.1</span>
+					<div id="les1_1_1" class="interactive line line_button"><span>big</span><span>fig</span><span>pig</span><span>rig</span><span>dig</span></div><br>
+					<div id="les1_1_2" class="interactive line line_button"><span>in</span><span>sin</span><span>bin</span><span>tin</span><span>fin</span></div><br>
+					<div id="les1_1_3" class="interactive line line_button"><span>it</span><span>pit</span><span>fit</span><span>sit</span><span>hit</span></div><br>
+					<div id="les1_1_4" class="interactive line line_button"><span>hip</span><span>lip</span><span>tip</span><span>sip</span><span>dip</span></div><br>
+					<div id="les1_1_5" class="interactive line line_button"><span>Sid</span><span>did</span><span>kid</span><span>mid</span><span>hid</span></div><br>
+					<div id="les1_1_6" class="interactive line line_button"><span>him</span><span>Tim</span><span>dim</span><span>is</span><span>his</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>1.2</span>
+					<div id="les1_2_1" class="interactive line line_button"><span>lip</span> <span>lid</span> <span>lit</span> <span>kit</span>  </div><br>
+					<div id="les1_2_2" class="interactive line line_button"><span>rib</span>  <span>rig</span> <span>rip</span> <span>rim</span></div><br>
+					<div id="les1_2_3" class="interactive line line_button"><span>dig</span> <span>zip</span> <span>did</span> <span>big</span> </div><br>
+					<div id="les1_2_4" class="interactive line line_button"><span>pit</span> <span>pin</span> <span>pig</span>  <span>is</span></div><br>
+					<div id="les1_2_5" class="interactive line line_button"><span>sin</span> <span>Sid</span> <span>sip</span> <span>sit</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>1.3</span>
+					<div id="les1_3_1" class="interactive line line_button"><span>fat</span>  <span>sat</span>  <span>rat</span> <span>pat</span> <span>mat</span> </div><br>
+					<div id="les1_3_2" class="interactive line line_button"><span>dad</span>  <span>sad</span> <span>mad</span> <span>pad</span> <span>had</span></div><br>
+					<div id="les1_3_3" class="interactive line line_button"><span>bag</span> <span>rag</span> <span>tag</span> <span>lag</span> <span>fag</span> </div><br>
+					<div id="les1_3_4" class="interactive line line_button"><span>map</span>  <span>lap</span> <span>nap</span> <span>tap</span> <span>rap</span></div><br>
+					<div id="les1_3_5" class="interactive line line_button"><span>fan</span> <span>man</span> <span>ran</span> <span>pan</span> <span>Dan</span> </div><br>
+					<div id="les1_3_6" class="interactive line line_button"><span>am</span> <span>Sam</span> <span>dam</span> <span>ham</span> <span>ram</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>1.4</span>
+					<div id="les1_4_1" class="interactive line line_button"><span>Sam</span> <span>sap</span> <span>sad</span> <span>sat </span> </div><br>
+					<div id="les1_4_2" class="interactive line line_button"><span>lad</span> <span>lap</span> <span>fat</span> <span>fan </span></div><br>
+					<div id="les1_4_3" class="interactive line line_button"><span>ran</span> <span>rap</span> <span>ram</span> <span>rag  </span> </div><br>
+					<div id="les1_4_4" class="interactive line line_button"><span>man</span> <span>map</span> <span>mat</span> <span>mad  </span></div><br>
+					<div id="les1_4_5" class="interactive line line_button"><span>ham</span> <span>hag</span> <span>had</span> <span>hat  </span> </div><br>
+					<div id="les1_4_6" class="interactive line line_button"><span>bag</span> <span>ban</span> <span>bat</span> <span>bad </span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>1.5</span>
+					<div id="les1_5_1" class="interactive line line_button"><span>Sid</span> <span>Sam</span> <span>sip</span> <span>sap</span> <span>sin</span> <span>sat </span> </div><br>
+					<div id="les1_5_2" class="interactive line line_button"><span>ham</span> <span>him</span> <span>had</span> <span>hid</span> <span>his</span> <span>hat </span></div><br>
+					<div id="les1_5_3" class="interactive line line_button"><span>pat</span> <span>pit</span> <span>pan</span> <span>pin</span> <span>pig</span>  <span>Pam</span> </div><br>
+					<div id="les1_5_4" class="interactive line line_button"><span>mad</span> <span>mid</span> <span>lad</span> <span>lid</span> <span>lip</span> <span>lap </span></div><br>
+					<div id="les1_5_5" class="interactive line line_button"><span>rag</span> <span>rig</span> <span>ram</span> <span>rim</span> <span>ran</span> <span>rip </span> </div><br>
+					<div id="les1_5_6" class="interactive line line_button"><span>bag</span> <span>big</span> <span>bat</span> <span>bit</span> <span>ban</span> <span>bin</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="les1_6_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">1.6</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>1.7</span>
+					<div id="les1_7_1" class="interactive line line_button">1) _________________</div><br>
+					<div id="les1_7_2" class="interactive line line_button">2) _________________</div><br>
+					<div id="les1_7_3" class="interactive line line_button">3) _________________</div><br>
+					<div id="les1_7_4" class="interactive line line_button">4) _________________</div><br>
+					<div id="les1_7_5" class="interactive line line_button">5) _________________</div>
+				</td>
+				<td>
+					<div id="les1_7_6" class="interactive line line_button">6) _________________</div><br>
+					<div id="les1_7_7" class="interactive line line_button">7) _________________</div><br>
+					<div id="les1_7_8" class="interactive line line_button">8) _________________</div><br>
+					<div id="les1_7_9" class="interactive line line_button">9) _________________</div><br>
+					<div id="les1_7_10" class="interactive line line_button">10) ________________</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="2">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 2.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="2">
+					<span class='number'>2.1</span>
+					<div id="les2_1_1" class="interactive line line_button"><span>not</span> <span>pot</span> <span>hot</span> <span>lot</span> <span>dot </span></div><br>
+					<div id="les2_1_2" class="interactive line line_button"><span>nod</span> <span>pod</span> <span>rod</span> <span>sod</span> <span>mod </span></div><br>
+					<div id="les2_1_3" class="interactive line line_button"><span>mop</span> <span>hop</span> <span>top</span> <span>pop</span> <span>lop </span></div><br>
+					<div id="les2_1_4" class="interactive line line_button"><span>rob</span> <span>Bob</span> <span>sob</span> <span>mob</span> <span>hob</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>2.2</span>
+					<div id="les2_2_1" class="interactive line line_button"><span>hog</span><span>hot</span> <span>hob</span> <span>hop </span></div><br>
+					<div id="les2_2_2" class="interactive line line_button"><span>rob</span> <span>Ron</span> <span>rod</span> <span>rot </span></div><br>
+					<div id="les2_2_3" class="interactive line line_button"><span>top</span> <span>Tom</span> <span>toss</span> <span>pot </span></div><br>
+					<div id="les2_2_4" class="interactive line line_button"><span>pop</span> <span>pod</span> <span>mob</span> <span>mop</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>2.3</span>
+					<div id="les2_3_1" class="interactive line line_button"><span>get</span> <span>pet</span> <span>bet</span> <span>let</span> <span>net </span></div><br>
+					<div id="les2_3_2" class="interactive line line_button"><span>fed</span> <span>led</span> <span>Ted</span> <span>red</span> <span>bed </span></div><br>
+					<div id="les2_3_3" class="interactive line line_button"><span>men</span> <span>hen</span> <span>den</span> <span>Ken</span> <span>pen </span></div><br>
+					<div id="les2_3_4" class="interactive line line_button"><span>beg</span> <span>Meg</span> <span>leg</span> <span>peg</span> <span>neg</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>2.4</span>
+					<div id="les2_4_1" class="interactive line line_button"><span>bed</span> <span>Ben</span> <span>beg</span> <span>bell </span></div><br>
+					<div id="les2_4_2" class="interactive line line_button"><span>let</span> <span>leg</span> <span>less</span> <span>led </span></div><br>
+					<div id="les2_4_3" class="interactive line line_button"><span>men</span> <span>mess</span> <span>Meg</span> <span>Mel</span></div><br>
+					<div id="les2_4_4" class="interactive line line_button"><span>pen</span> <span>pet</span> <span>peg</span> <span>tell</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>2.5</span>
+					<div id="les2_5_1" class="interactive line line_button"><span>beg — bag </span></div><br>
+					<div id="les2_5_2" class="interactive line line_button"><span>men — man </span></div><br>
+					<div id="les2_5_3" class="interactive line line_button"><span>neg — nag </span></div><br>
+					<div id="les2_5_4" class="interactive line line_button"><span>Pell — apple </span></div><br>
+					<div id="les2_5_5" class="interactive line line_button"><span>bed — bad </span></div><br>
+					<div id="les2_5_6" class="interactive line line_button"><span>met — mat </span></div>
+				</td>
+				<td>
+					<div id="les2_5_7" class="interactive line line_button"><span>bet — bat </span></div><br>
+					<div id="les2_5_8" class="interactive line line_button"><span>led — lad </span></div><br>
+					<div id="les2_5_9" class="interactive line line_button"><span>Den — Dan</span></div><br>
+					<div id="les2_5_10" class="interactive line line_button"><span>pen — pan </span></div><br>
+					<div id="les2_5_11" class="interactive line line_button"><span>ten — tan </span></div><br>
+					<div id="les2_5_12" class="interactive line line_button"><span>pet — pat </span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="les2_6_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">2.6</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>2.7</span>
+					<div id="les2_7_1" class="interactive line line_button">1) _________________</div><br>
+					<div id="les2_7_2" class="interactive line line_button">2) _________________</div><br>
+					<div id="les2_7_3" class="interactive line line_button">3) _________________</div>
+				</td>
+				<td>
+					<div id="les2_7_4" class="interactive line line_button">4) _________________</div><br>
+					<div id="les2_7_5" class="interactive line line_button">5) _________________</div><br>
+					<div id="les2_7_6" class="interactive line line_button">6) _________________</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="6">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 3.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="6">
+					<span class='number'>3.1</span>
+					<div id="les3_1_1" class="interactive line line_button"><span>I</span>   <span>pie <span>die <span>lie <span>tie</span></div><br>
+					<div id="les3_1_2" class="interactive line line_button"><span>fine</span> <span>dine <span>mine <span>line <span>pine </span></div><br>
+					<div id="les3_1_3" class="interactive line line_button"><span>pile</span> <span>Kyle <span>Nile <span>file <span>mile</span></div><br>
+					<div id="les3_1_4" class="interactive line line_button"><span>hide</span> <span>ride <span>side <span>slide <span>tide </span></div><br>
+					<div id="les3_1_5" class="interactive line line_button"><span>like</span> <span>Nike <span>pike <span>Mike <span>bike </span></div><br>
+					<div id="les3_1_6" class="interactive line line_button"><span>Kyle</span> <span>style <span>type <span>my <span>spy</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>3.2</span>
+					<div id="les3_2_1" class="interactive line line_button"><span>fill — file </span></div><br>
+					<div id="les3_2_2" class="interactive line line_button"><span>hid — hide </span></div><br>
+					<div id="les3_2_3" class="interactive line line_button"><span>slid — slide </span></div><br>
+					<div id="les3_2_4" class="interactive line line_button"><span>pin — pine</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les3_2_5" class="interactive line line_button"><span>pill — pile </span></div><br>
+					<div id="les3_2_6" class="interactive line line_button"><span>kit — kite</span></div><br>
+					<div id="les3_2_7" class="interactive line line_button"><span>fin — fine </span></div><br>
+					<div id="les3_2_8" class="interactive line line_button"><span>spin —spine </span></div>
+				</td>
+				<td colspan="2">
+					<div id="les3_2_9" class="interactive line line_button"><span>bid — bide </span></div><br>
+					<div id="les3_2_10" class="interactive line line_button"><span>sit — site </span></div><br>
+					<div id="les3_2_11" class="interactive line line_button"><span>rid — ride </span></div><br>
+					<div id="les3_2_12" class="interactive line line_button"><span>tin — tile</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<div id="les3_3_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">3.3</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>3.4</span>
+					<div id="les3_4_1" class="interactive line line_button">1) _________________</div><br>
+					<div id="les3_4_2" class="interactive line line_button">2) _________________</div><br>
+					<div id="les3_4_3" class="interactive line line_button">3) _________________</div>
+				</td>
+				<td colspan="3">
+					<div id="les3_4_4" class="interactive line line_button">4) _________________</div><br>
+					<div id="les3_4_5" class="interactive line line_button">5) _________________</div><br>
+					<div id="les3_4_6" class="interactive line line_button">6) _________________</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>3.5</span>
+					<div id="les3_5_1" class="interactive line line_button">1) ________ my bike.</div><br>
+					<div id="les3_5_2" class="interactive line line_button">2) ________ a red hen. </div>
+				</td>
+				<td colspan="3">
+					<div id="les3_5_3" class="interactive line line_button">3) ________ a big man. </div><br>
+					<div id="les3_5_4" class="interactive line line_button">4) ________ a big dog.</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="3">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 4.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="3">
+					<span class='number'>4.1</span>
+					<div id="les4_1_1" class="interactive line line_button"><span>ate</span> <span>fate</span> <span>Kate</span> <span>rate</span> <span>late </span></div><br>
+					<div id="les4_1_2" class="interactive line line_button"><span>made</span> <span>fade</span> <span>lane</span> <span>pane</span> <span>mane </span></div><br>
+					<div id="les4_1_3" class="interactive line line_button"><span>rake</span> <span>lake</span> <span> make</span> <span>fake</span> <span>sake </span></div><br>
+					<div id="les4_1_4" class="interactive line line_button"><span>tape</span> <span>blade</span> <span>spade</span> <span>tale</span> <span>male</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>4.2</span>
+					<div id="les4_2_1" class="interactive line line_button"><span>mad — made </span></div><br>
+					<div id="les4_2_2" class="interactive line line_button"><span>fad — fade </span></div><br>
+					<div id="les4_2_3" class="interactive line line_button"><span>rat — rate </span></div><br>
+					<div id="les4_2_4" class="interactive line line_button"><span>fat — fate </span></div><br>
+					<div id="les4_2_5" class="interactive line line_button"><span>plan — plane </span></div>
+				</td>
+				<td>
+					<div id="les4_2_6" class="interactive line line_button"><span>pan — pane </span></div><br>
+					<div id="les4_2_7" class="interactive line line_button"><span>tap — tape </span></div><br>
+					<div id="les4_2_8" class="interactive line line_button"><span>at — ate </span></div><br>
+					<div id="les4_2_9" class="interactive line line_button"><span>bat — bate </span></div><br>
+					<div id="les4_2_10" class="interactive line line_button"><span>tan — tale </span></div>
+				</td>
+				<td>
+					<div id="les4_2_11" class="interactive line line_button"><span>man — mane </span></div><br>
+					<div id="les4_2_12" class="interactive line line_button"><span>hat — hate </span></div><br>
+					<div id="les4_2_13" class="interactive line line_button"><span>bad — bade </span></div><br>
+					<div id="les4_2_14" class="interactive line line_button"><span>fan — fane </span></div><br>
+					<div id="les4_2_15" class="interactive line line_button"><span>Stan —stale </span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="les4_3_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">4.3</div>
+				</td>
+			</tr>
+		</table>		
+		<table>
+			<th colspan="2">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 5.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="2">
+					<span class='number'>5.1</span>
+					<div id="les5_1_1" class="interactive line line_button"><span> he</span>  <span>Pete</span>  <span>Steve</span> <span>legal</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>5.2</span>
+					<div id="les5_2_1" class="interactive line line_button"><span>he — hell </span></div><br>
+					<div id="les5_2_2" class="interactive line line_button"><span>Steve — step </span></div>
+				</td>
+				<td>
+					<div id="les5_2_3" class="interactive line line_button"><span>Pete — pet</span></div><br>
+					<div id="les5_2_4" class="interactive line line_button"><span>legal — leg</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>5.3</span>
+					<div id="les5_3_1" class="interactive line line_button"><span> need</span> <span>deed</span> <span>seed</span> <span>heed</span> <span>Reed</span></div><br>
+					<div id="les5_3_2" class="interactive line line_button"><span> seek</span> <span>leek</span>  <span>tree</span> <span>keen</span> <span>seen</span></div><br>
+					<div id="les5_3_3" class="interactive line line_button"><span> feel</span> <span>keel</span> <span>peel</span> <span>see</span> <span>seem</span></div><br>
+					<div id="les5_3_4" class="interactive line line_button"><span> meet</span> <span>beet</span> <span>feet</span> <span>bee</span> <span>teen</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>5.4</span>
+					<div id="les5_4_1" class="interactive line line_button"><span>deed — did  </span></div><br>
+					<div id="les5_4_2" class="interactive line line_button"><span>feet — fit</span></div><br>
+					<div id="les5_4_3" class="interactive line line_button"><span>been — bin </span></div><br>
+					<div id="les5_4_4" class="interactive line line_button"><span>peel — pill </span></div><br>
+					<div id="les5_4_5" class="interactive line line_button"><span>Pete — pit </span></div>
+				</td>
+				<td>
+					<div id="les5_4_6" class="interactive line line_button"><span>feel — fill</span></div><br>
+					<div id="les5_4_7" class="interactive line line_button"><span>seed — Sid </span></div><br>
+					<div id="les5_4_8" class="interactive line line_button"><span>teen — tin</span></div><br>
+					<div id="les5_4_9" class="interactive line line_button"><span>sleep — slip </span></div><br>
+					<div id="les5_4_10" class="interactive line line_button"><span>keen — kin </span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="les5_5_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">5.5</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>5.6</span>
+					<div id="les5_6_1" class="interactive card">1)</div><br>
+					<div id="les5_6_2" class="interactive card">2)</div><br>
+					<div id="les5_6_3" class="interactive card">3)</div><br>
+					<div id="les5_6_4" class="interactive card">4)</div><br>
+					<div id="les5_6_5" class="interactive card">5)</div><br>
+					<div id="les5_6_6" class="interactive card">6)</div><br>
+					<div id="les5_6_7" class="interactive card">7)</div><br>
+					<div id="les5_6_8" class="interactive card">8)</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="3">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 6.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="3">
+					<span class='number'>6.1</span>
+					<div id="les6_1_1" class="interactive line line_button"><span> hug</span> <span>rug</span> <span>mug</span> <span>dug</span> <span>bug</span></div><br>
+					<div id="les6_1_2" class="interactive line line_button"><span> sum</span> <span>hum</span> <span>gum</span> <span>rum</span> <span>mud</span></div><br>
+					<div id="les6_1_3" class="interactive line line_button"><span> run</span> <span>fun</span> <span>sun</span> <span>bun</span> <span>nun</span></div><br>
+					<div id="les6_1_4" class="interactive line line_button"><span> rub</span> <span>tub</span> <span>sub</span> <span>hub</span> <span>up</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>6.2</span>
+					<div id="les6_2_1" class="interactive line line_button"><span> hug</span> <span>hub</span> <span>hum</span> <span>hut</span></div><br>
+					<div id="les6_2_2" class="interactive line line_button"><span> rub</span> <span>rug</span> <span>run</span> <span>rum</span></div><br>
+					<div id="les6_2_3" class="interactive line line_button"><span> sum</span> <span>sun</span> <span>mud</span>  <span>mug</span></div><br>
+					<div id="les6_2_4" class="interactive line line_button"><span> bun</span> <span>bug</span> <span>bus</span> <span>but</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>6.3</span>
+					<div id="les6_3_1" class="interactive line line_button"><span> rug — rag </span></div><br>
+					<div id="les6_3_2" class="interactive line line_button"><span> hum — ham </span></div><br>
+					<div id="les6_3_3" class="interactive line line_button"><span> fun — fan</span></div>
+				</td>
+				<td>
+					<div id="les6_3_4" class="interactive line line_button"><span>run — ran </span></div><br>
+					<div id="les6_3_5" class="interactive line line_button"><span>but — bat </span></div><br>
+					<div id="les6_3_6" class="interactive line line_button"><span>dug — dag </span></div>
+				</td>
+				<td>
+					<div id="les6_3_7" class="interactive line line_button"><span>sum — Sam </span></div><br>
+					<div id="les6_3_8" class="interactive line line_button"><span>bun — ban </span></div><br>
+					<div id="les6_3_9" class="interactive line line_button"><span>hut — hat</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>6.4</span>
+					<div id="les6_4_1" class="interactive card"><span>1)</div><br>
+					<div id="les6_4_2" class="interactive card"><span>2)</span></div><br>
+					<div id="les6_4_3" class="interactive card"><span>3)</span></div><br>
+					<div id="les6_4_4" class="interactive card"><span>4)</span></div><br>
+					<div id="les6_4_5" class="interactive card"><span>5)</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div id="les6_5_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">6.5</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="2">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 7.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="2">
+					<span class='number'>7.1</span>
+					<div id="les7_1_1" class="interactive line line_button"><span>сat</span>  <span>can</span> <span>cut</span> <span>cup</span> <span>cop </span></div><br>
+					<div id="les7_1_2" class="interactive line line_button"><span> cake</span> <span>cap</span>  <span>cape</span> <span>cot</span> <span>cod</span></div><br>
+					<div id="les7_1_3" class="interactive line line_button"><span> black</span> <span>pack</span> <span>sack</span> <span>pack</span> <span>rack </span></div><br>
+					<div id="les7_1_4" class="interactive line line_button"><span>lock</span> <span>mock</span> <span>rock</span> <span>sock</span> <span>dock </span></div><br>
+					<div id="les7_1_5" class="interactive line line_button"><span>pick</span>  <span>lick</span> <span>tick</span>  <span>Rick</span> <span>Nick</span></div><br>
+					<div id="les7_1_6" class="interactive line line_button"><span>luck</span>  <span>duck</span> <span>puck</span> <span>suck</span> <span>stuck</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>7.2</span>
+					<div id="les7_2_1" class="interactive line line_button"><span>duck</span> <span>dock</span> <span>sack</span> <span>sock</span> <span>clock </span></div><br>
+					<div id="les7_2_2" class="interactive line line_button"><span>lick</span> <span>luck</span> <span>lack</span> <span>pack</span> <span>puck </span></div><br>
+					<div id="les7_2_3" class="interactive line line_button"><span>Rick</span> <span>rock</span> <span>black</span> <span>back</span> <span>stick </span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>7.3</span>
+					<div id="les7_3_1" class="interactive line line_button"><span>it</span>  <span>is </span> <span>rat </span> <span>man</span> <span>fat </span></div><br>
+					<div id="les7_3_2" class="interactive line line_button"><span>fig</span>  <span>kid</span>  <span>big</span>  <span>pig </span> <span>map </span></div><br>
+					<div id="les7_3_3" class="interactive line line_button"><span>hen</span>  <span>dog </span> <span>bat</span>  <span>bag </span> <span>pen </span></div><br>
+					<div id="les7_3_4" class="interactive line line_button"><span>red</span>  <span>I </span> <span>kite </span> <span>like </span> <span>my </span></div><br>
+					<div id="les7_3_5" class="interactive line line_button"><span>bike</span>  <span>pie</span>  <span>bed</span>  <span>ten </span> <span>nine </span></div><br>
+					<div id="les7_3_6" class="interactive line line_button"><span>seven</span>  <span>five</span>  <span>hat </span> <span>lake </span> <span>bee </span></div><br>
+					<div id="les7_3_7" class="interactive line line_button"><span>need </span> <span>see</span>  <span>tree </span> <span>lake</span>  <span>rug </span></div><br>
+					<div id="les7_3_8" class="interactive line line_button"><span>bug </span> <span>ill</span>  <span>feel</span>  <span>men</span> <span>pike</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>7.4</span>
+					<div id="les7_4_1" class="interactive card">1)</div><br>
+					<div id="les7_4_2" class="interactive card">2)</div><br>
+					<div id="les7_4_3" class="interactive card">3)</div>
+				</td>
+				<td>
+					<div id="les7_4_4" class="interactive card">4)</div><br>
+					<div id="les7_4_5" class="interactive card">5)</div><br>
+					<div id="les7_4_6" class="interactive card">6)</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="les7_5_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">7.5</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>7.6</span>
+					<div id="les7_6_1" class="interactive line line_button">1) It is not a ________ bed.</div><br>
+					<div id="les7_6_2" class="interactive line line_button">2) Is it a ________ pig?</div><br>
+					<div id="les7_6_3" class="interactive line line_button">3) My ________ is red. </div><br>
+					<div id="les7_6_4" class="interactive line line_button">4) I _____ see a bug on a rug.</div>
+				</td>
+				<td>
+					<div id="les7_6_5" class="interactive line line_button">5) I can see a big ________.</div><br>
+					<div id="les7_6_6" class="interactive line line_button">6) I ________ a red pen.</div><br>
+					<div id="les7_6_7" class="interactive line line_button">7) I need a big ________.</div><br>
+					<div id="les7_6_8" class="interactive line line_button">8) Is it a ________?</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="6">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 8.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="6">
+					<span class='number'>8.1</span>
+					<div id="les8_1_1" class="interactive line line_button"><span>chat</span> <span>chit</span> <span>chap</span> <span>chip</span> <span>chin </span></div><br>
+					<div id="les8_1_2" class="interactive line line_button"><span>cheek</span> <span>chill</span> <span>cheep</span> <span>chop</span> <span>China </span></div><br>
+					<div id="les8_1_3" class="interactive line line_button"><span>rich</span> <span>beech</span> <span>leech</span>  <span>much</span>  <span>such</span></div><br>
+					<div id="les8_1_4" class="interactive line line_button"><span>ditch</span> <span>pitch</span> <span>itch</span> <span>stitch</span> <span>Mitch </span></div><br>
+					<div id="les8_1_5" class="interactive line line_button"><span>hatch</span> <span>patch</span> <span>match</span> <span>latch</span> <span>snatch</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>8.2</span>
+					<div id="les8_2_1" class="interactive line line_button"><span>patch</span> <span>such</span> <span>chill</span> <span>China</span> <span>much </span></div><br>
+					<div id="les8_2_2" class="interactive line line_button"><span>chit</span> <span>chat</span> <span>latch</span> <span>itch</span> <span>beech</span></div><br>
+					<div id="les8_2_3" class="interactive line line_button"><span>notch</span> <span>match</span> <span>chop</span> <span>leech</span> <span>cheep</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>8.3</span>
+					<div id="les8_3_1" class="interactive line line_button"><span>tap — chap</span></div><br>
+					<div id="les8_3_2" class="interactive line line_button"><span>tat — chat</span></div><br>
+					<div id="les8_3_3" class="interactive line line_button"><span>mat — match</span></div><br>
+					<div id="les8_3_4" class="interactive line line_button"><span>hat — hatch</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les8_3_5" class="interactive line line_button"><span>tick — chick</span></div><br>
+					<div id="les8_3_6" class="interactive line line_button"><span>tip — chip</span></div><br>
+					<div id="les8_3_7" class="interactive line line_button"><span>not — notch</span></div><br>
+					<div id="les8_3_8" class="interactive line line_button"><span>it — itch</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les8_3_9" class="interactive line line_button"><span>top — chop</span></div><br>
+					<div id="les8_3_10" class="interactive line line_button"><span>tin — chin</span></div><br>
+					<div id="les8_3_11" class="interactive line line_button"><span>pat — patch</span></div><br>
+					<div id="les8_3_12" class="interactive line line_button"><span>beet — beech</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>8.4</span>
+					<div id="les8_4_1" class="interactive line line_button"><span>It’s a rich man.</span></div><br>
+					<div id="les8_4_2" class="interactive line line_button"><span>It’s a green hat.</span></div><br>
+					<div id="les8_4_3" class="interactive line line_button"><span>China is very big.</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les8_4_4" class="interactive line line_button"><span>It’s a black dress.</span></div><br>
+					<div id="les8_4_5" class="interactive line line_button"><span>I like it very much.</span></div><br>
+					<div id="les8_4_6" class="interactive line line_button"><span>I’ve got a bike.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<div id="les8_5_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">8.5</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>8.6</span>
+					<div id="les8_6_1" class="interactive line line_button"><span>1) I like my bike very ________.</span></div><br>
+					<div id="les8_6_2" class="interactive line line_button"><span>2) Is ________ big?</span></div><br>
+					<div id="les8_6_3" class="interactive line line_button"><span>3) My dress is not ________.</span></div><br>
+					<div id="les8_6_4" class="interactive line line_button"><span>4) It’s a ________ man.</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les8_6_5" class="interactive line line_button"><span>5) My ________ is black.</span></div><br>
+					<div id="les8_6_6" class="interactive line line_button"><span>6) I ______ my kite very much.</span></div><br>
+					<div id="les8_6_7" class="interactive line line_button"><span>7) I’ve got a red ________. </span></div><br>
+					<div id="les8_6_8" class="interactive line line_button"><span>8) I am not ________.</span></div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th>
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 9.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td>
+					<span class='number'>9.1</span>
+					<div id="les9_1_1" class="interactive line line_button"><span>shop</span> <span>ship</span> <span>sheep</span> <span>sheet</span> <span>shut </span></div><br>
+					<div id="les9_1_2" class="interactive line line_button"><span>cash</span> <span>shine</span> <span>she</span> <span>mash</span> <span>dish</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>9.2</span>
+					<div id="les9_2_1" class="interactive  marg"><span>Ukraine</span></div>
+					<div id="les9_2_2" class="interactive   marg"><span>Russia</span></div>
+					<div id="les9_2_3" class="interactive   marg"><span>Turkey</span></div><br>
+					<div id="les9_2_4" class="interactive marg"><span>France</span></div>
+					<div id="les9_2_5" class="interactive marg"><span>Britain</span></div>
+					<div id="les9_2_6" class="interactive marg"><span>Australia</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="les9_3_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">9.3</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>9.4</span>
+					<div id="les9_4_1" class="interactive line line_button">1) I ________ a red pen.</div><br>
+					<div id="les9_4_2" class="interactive line line_button">2) It ________ a ________ cat.</div><br>
+					<div id="les9_4_3" class="interactive line line_button">3) Jack is from ________.</div><br>
+					<div id="les9_4_4" class="interactive line line_button">4) I _____ see a bug on a rug.</div><br>
+					<div id="les9_4_5" class="interactive line line_button">5) Is ________ big?</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="6">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 10.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="6">
+					<span class='number'>10.1</span>
+					<div id="les10_1_1" class="interactive line line_button"><span>jump</span><span>just</span><span>Justin</span><span>jug</span><span>jeep</span></div><br>
+					<div id="les10_1_2" class="interactive line line_button"><span>Jake</span><span>Jane</span><span>Jack</span><span>jacket</span><span>jam</span></div><br>
+					<div id="les10_1_3" class="interactive line line_button"><span>jog</span><span>job</span><span>jot</span><span>Jill</span><span>Jim</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>10.2</span>
+					<div id="les10_2_1" class="interactive line line_button"><span>age</span><span>page</span> <span>sage</span> <span>cage</span> <span>stage </span></div><br>
+					<div id="les10_2_2" class="interactive line line_button"><span>rage</span>  <span>gym</span> <span>gin</span> <span>gem</span> <span>jet</span></div><br>
+					<div id="les10_2_3" class="interactive line line_button"><span>fridge</span> <span>bridge</span><span>edge</span> <span>sledge</span> <span>badge</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>10.3</span>
+					<div id="les10_3_1" class="interactive line line_button"><span>rag — rage</span></div><br>
+					<div id="les10_3_2" class="interactive line line_button"><span>fig — fridge </span></div><br>
+					<div id="les10_3_3" class="interactive line line_button"><span>leg — ledge</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les10_3_4" class="interactive line line_button"><span>stag — stage</span></div><br>
+					<div id="les10_3_5" class="interactive line line_button"><span>bag — badge</span></div><br>
+					<div id="les10_3_6" class="interactive line line_button"><span>slug — sledge</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les10_3_7" class="interactive line line_button"><span>peg — page</span></div><br>
+					<div id="les10_3_8" class="interactive line line_button"><span>big — bridge</span></div><br>
+					<div id="les10_3_9" class="interactive line line_button"><span>egg — edge</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>10.4</span>
+					<div id="les10_4_1" class="interactive line line_button"><span>It’s a big bridge.</span></div><br>
+					<div id="les10_4_2" class="interactive line line_button"><span>Give me a cake, please.</span></div><br>
+					<div id="les10_4_3" class="interactive line line_button"><span>Give him an egg, please.</span></div><br>
+					<div id="les10_4_4" class="interactive line line_button"><span>It’s a black cage.</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les10_4_5" class="interactive line line_button"><span>Give me a match, please.</span></div><br>
+					<div id="les10_4_6" class="interactive line line_button"><span>Give him an apple, please.</span></div><br>
+					<div id="les10_4_7" class="interactive line line_button"><span>I see a fridge.</span></div><br>
+					<div id="les10_4_8" class="interactive line line_button"><span>Justin is not fat.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>10.5</span>
+					<div id="les10_5_1" class="interactive line line_button"><span>ice</span><span>nice</span><span>rice</span><span>lice</span><span>dice</span><span>mice</span></div><br>
+					<div id="les10_5_2" class="interactive line line_button"><span>face</span><span>lace</span><span>pace</span><span>race</span><span>place</span><span>spice</span></div><br>
+					<div id="les10_5_3" class="interactive line line_button"><span>cent</span><span>fancy</span><span>city</span><span>fence</span><span>since</span><span>mince</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>10.6</span>
+					<div id="les10_6_1" class="interactive line line_button"><span>rice — race — rack</span></div><br>
+					<div id="les10_6_2" class="interactive line line_button"><span>pace — pack — pick</span></div><br>
+					<div id="les10_6_3" class="interactive line line_button"><span>lace — lake— lack</span></div><br>
+					<div id="les10_6_4" class="interactive line line_button"><span>nice — Nick — neck</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les10_6_5" class="interactive line line_button"><span>cent — can — cat</span></div><br>
+					<div id="les10_6_6" class="interactive line line_button"><span>city — kitty — cake</span></div><br>
+					<div id="les10_6_7" class="interactive line line_button"><span>lice — like — lick</span></div><br>
+					<div id="les10_6_8" class="interactive line line_button"><span>race — Rick — rock</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>10.7</span>
+					<div id="les10_5_1" class="interactive line line_button"><span>nice</span> <span>Nigel</span> <span>pace</span> <span>page</span></div><br>
+					<div id="les10_5_2" class="interactive line line_button"><span>race</span> <span>rage</span> <span>cent</span> <span>gentle</span></div><br>
+					<div id="les10_5_3" class="interactive line line_button"><span>face</span> <span>fudge</span> <span>cell</span> <span>cage</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<div id="les10_8_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">10.8</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>10.9</span>
+					<div id="les10_9_1" class="interactive">
+							<img src="additional_files/pictures/10_9_1.png"><br>
+							<span>Justin</span>
+					</div>
+				</td>
+				<td>
+					<div id="les10_9_2" class="interactive">
+							<img src="additional_files/pictures/10_9_2.png"><br>
+							<span>Jane</span>
+					</div>
+				</td>
+				<td>
+					<div id="les10_9_3" class="interactive">
+							<img src="additional_files/pictures/10_9_3.png"><br>
+							<span>Jake</span>
+					</div>
+				</td>
+				<td>
+					<div id="les10_9_4" class="interactive bot">
+							<img src="additional_files/pictures/10_9_4.png"><br>
+							<span>Terry</span>
+					</div>
+				</td>
+				<td>
+					<div id="les10_9_5" class="interactive">
+							<img src="additional_files/pictures/10_9_5.png"><br>
+							<span>Jerry</span>
+					</div>
+				</td>
+				<td>
+					<div id="les10_9_6" class="interactive">
+							<img src="additional_files/pictures/10_9_6.png"><br>
+							<span>Jill</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>10.10</span>
+					<div id="les10_10_1" class="interactive line line_button">1) I can see ________ .</div><br>
+					<div id="les10_10_2" class="interactive line line_button">2) I can see ________ .</div><br>
+					<div id="les10_10_3" class="interactive line line_button">3) I’m ________ .</div><br>
+					<div id="les10_10_4" class="interactive line line_button">4) I need ________ .</div>
+				</td>
+			</tr>
+		</table>	
+		<table>
+			<th colspan="3">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 11.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.1</span>
+					<div id="les11_1_1" class="interactive line line_button"><span>mode</span><span>mole</span><span>pole</span><span>poke</span><span>bone</span></div><br>
+					<div id="les11_1_2" class="interactive line line_button"><span>rope</span><span>nose</span><span>pose</span><span>rose</span><span>froze</span></div><br>
+					<div id="les11_1_3" class="interactive line line_button"><span>no</span><span>so</span><span>toe</span><span>go</span><span>rosy</span></div><br>
+					<div id="les11_1_4" class="interactive line line_button"><span>lone</span><span>mole</span><span>close</span><span>cope</span><span>cone</span></div><br>
+					<div id="les11_1_5" class="interactive line line_button"><span>hope</span><span>home</span><span>hole</span><span>hello</span><span>role</span></div><br>
+					<div id="les11_1_6" class="interactive line line_button"><span>tone</span><span>stone</span><span>drove</span><span>vote</span><span>zone</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.2</span>
+					<div id="les11_2_1" class="interactive line line_button"><span>drove</span><span>drive</span><span>drape</span><span>Dave</span><span>dine</span></div><br>
+					<div id="les11_2_2" class="interactive line line_button"><span>mole</span><span>mile</span><span>male</span><span>mane</span><span>Mike</span></div><br>
+					<div id="les11_2_3" class="interactive line line_button"><span>nose</span><span>nine</span><span>nice</span><span>kite</span><span>Kate</span></div><br>
+					<div id="les11_2_4" class="interactive line line_button"><span>pole</span><span>pile</span><span>pale</span><span>poke</span><span>pike</span></div><br>
+					<div id="les11_2_5" class="interactive line line_button"><span>role</span><span>rice</span><span>race</span><span>rode</span><span>rose</span></div><br>
+					<div id="les11_2_6" class="interactive line line_button"><span>tie</span><span>tile</span><span>tale</span><span>tape</span><span>lace</span></div><br>
+					<div id="les11_2_7" class="interactive line line_button"><span>face</span><span>fake</span><span>fine</span><span>lone</span><span>like</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>11.3</span>
+					<div id="les11_3_1" class="interactive line line_button"><span>pop — Pope</span></div><br>
+					<div id="les11_3_2" class="interactive line line_button"><span>hop — hope</span></div>
+				</td>
+				<td>
+					<div id="les11_3_3" class="interactive line line_button"><span>rob — rope</span></div><br>
+					<div id="les11_3_4" class="interactive line line_button"><span>nod — nose</span></div>
+				</td>
+				<td>
+					<div id="les11_3_5" class="interactive line line_button"><span>cop — cope</span></div><br>
+					<div id="les11_3_6" class="interactive line line_button"><span>stop — stone</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.4</span>
+					<div id="les11_4_1" class="interactive line line_button"><span>mood</span><span>moon</span><span>food</span><span>noon</span><span>room</span></div><br>
+					<div id="les11_4_2" class="interactive line line_button"><span>soon</span><span>fool</span><span>pool</span><span>cool</span><span>too</span></div><br>
+					<div id="les11_4_3" class="interactive line line_button"><span>roof</span><span>root</span><span>room</span><span>boom</span><span>boot</span></div><br>
+					<div id="les11_4_4" class="interactive line line_button"><span>balloon</span><span>spoon</span><span>tool</span><span>pool</span><span>moon</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.5</span>
+					<div id="les11_5_1" class="interactive line line_button"><span>soon</span><span>sock</span><span>sack</span><span>sole</span></div><br>
+					<div id="les11_5_2" class="interactive line line_button"><span>tool</span><span>tale</span><span>tone</span><span>tack</span></div><br>
+					<div id="les11_5_3" class="interactive line line_button"><span>pool</span><span>pack</span><span>poke</span><span>pot</span></div><br>
+					<div id="les11_5_4" class="interactive line line_button"><span>mood</span><span>mop</span><span>mat</span><span>mole</span></div><br>
+					<div id="les11_5_5" class="interactive line line_button"><span>room</span><span>role</span><span>rack</span><span>rock</span></div><br>
+					<div id="les11_5_6" class="interactive line line_button"><span>fool</span><span>fat</span><span>fate</span><span>flock</span></div><br>
+					<div id="les11_5_7" class="interactive line line_button"><span>cool</span><span>cat</span><span>cope</span><span>cop</span></div><br>
+					<div id="les11_5_8" class="interactive line line_button"><span>stool</span><span>cool</span><span>cone</span><span>mock</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.6</span>
+					<div id="les11_6_1" class="interactive line line_button"><span>road</span><span>boat</span><span>soap</span><span>toad</span><span>load</span><span>foam</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.7</span>
+					<div id="les11_7_1" class="interactive line line_button"><span>road</span><span>rope</span><span>rock</span><span>root</span></div><br>
+					<div id="les11_7_2" class="interactive line line_button"><span>boat</span><span>bone</span><span>boss</span><span>boot</span></div><br>
+					<div id="les11_7_3" class="interactive line line_button"><span>soap</span><span>sofa</span><span>sock</span><span>soon</span></div><br>
+					<div id="les11_7_4" class="interactive line line_button"><span>toad</span><span>toast</span><span>tone</span><span>tool</span></div><br>
+					<div id="les11_7_5" class="interactive line line_button"><span>load</span><span>lone</span><span>lock</span><span>loop</span></div><br>
+					<div id="les11_7_6" class="interactive line line_button"><span>foam</span><span>moan</span><span>spook</span><span>soak</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.8</span>
+					<div id="les11_8_1" class="interactive line line_button"><span>cool</span><span>cook</span><span>мmoon</span><span>look</span><span>soon</span><span>spoon</span></div><br>
+					<div id="les11_8_2" class="interactive line line_button"><span>mood</span><span>good</span><span>book</span><span>room</span><span>balloon</span><span>cool</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>11.9</span>
+					<div id="les11_9_1" class="interactive marg"><span>Look! It’s a big dog.</span></div>
+					<div id="les11_9_7" class="interactive marg"><span>It’s Tom. He’s a good cook.</span></div><br>
+					<div id="les11_9_2" class="interactive   marg"><span>It’s my room. It’s big and nice.</span></div>
+					<div id="les11_9_8" class="interactive marg"><span>His spoon is not big.</span></div><br>
+					<div id="les11_9_3" class="interactive   marg"><span>I’m a cook. He’s a cook, too.</span></div>
+					<div id="les11_9_9" class="interactive marg"><span>His spoon is not big.</span></div><br>
+				
+					<div id="les11_9_4" class="interactive marg"><span>She’s got a cat. I’ve got a cat, too.</span></div>
+					<div class="empty_block"></div><br>
+					<div id="les11_9_5" class="interactive marg"><span>My balloon is red. His balloon is green.</span></div>
+					<div class="empty_block"></div><br>
+					<div id="les11_9_6" class="interactive marg"><span>I’ve got a good mood. He’s got a bad mood.</span></div>
+					<div class="empty_block"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class='number'>11.10</span>
+					<div id="les11_10_1" class="interactive"><span>1) Dave has got a</span><br>
+					<img src="additional_files/pictures/11_10_1.jpg"></div>
+				</td>
+				<td>
+					<div id="les11_10_2" class="interactive"><span>2) Dave has got a</span><br>
+					<img src="additional_files/pictures/11_10_2.jpg"></div>
+				</td>
+				<td>
+					<div id="les11_10_3" class="interactive"><span>3) Dave has got a</span><br>
+					<img src="additional_files/pictures/11_10_3.jpg"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="les11_10_4" class="interactive"><span>4) Dave has got a</span><br>
+					<img src="additional_files/pictures/11_10_4.jpg"></div>
+				</td>
+				<td>
+					<div id="les11_10_5" class="interactive"><span>5) Dave has got a</span><br>
+					<img src="additional_files/pictures/11_10_5.jpg"></div>
+				</td>
+				<td>
+					<div id="les11_10_6" class="interactive"><span>6) Dave has got a</span><br>
+					<img src="additional_files/pictures/11_10_6.jpg"></div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="6">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 12.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.1</span>
+					<div id="les12_1_1" class="interactive line line_button"><span>will</span><span>win</span><span>wit</span><span>witty</span><span>wish</span></div><br>
+					<div id="les12_1_2" class="interactive line line_button"><span>wise</span><span>wine</span><span>wake</span><span>woke</span><span>week</span></div><br>
+					<div id="les12_1_3" class="interactive line line_button"><span>well</span><span>swell</span><span>week</span><span>weep</span><span>awaken</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.2</span>
+					<div id="les12_2_1" class="interactive line line_button"><span>white</span><span>while</span><span>why</span><span>wheel</span><span>when</span></div><br>
+					<div id="les12_2_2" class="interactive line line_button"><span>whale</span><span>whip</span><span>which</span><span>white</span><span>why</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.3</span>
+					<div id="les12_3_1" class="interactive line line_button"><span>whole</span><span>who</span><span>whose</span><span>whom</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.4</span>
+					<div id="les12_4_1" class="interactive line line_button"><span>white</span><span>while</span><span>why</span><span>wheel</span><span>when</span></div><br>
+					<div id="les12_4_2" class="interactive line line_button"><span>whale</span><span>whip</span><span>which</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>12.5</span>
+					<div id="les12_5_1" class="interactive line line_button"><span>wine — vine</span></div><br>
+					<div id="les12_5_2" class="interactive line line_button"><span>wit — Vit</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les12_5_3" class="interactive line line_button"><span>week — Vick</span></div><br>
+					<div id="les12_5_4" class="interactive line line_button"><span>wet — vet</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les12_5_5" class="interactive line line_button"><span>west — vest</span></div><br>
+					<div id="les12_5_6" class="interactive line line_button"><span>will — villa</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.6</span>
+					<div id="les12_6_1" class="interactive line line_button"><span>think</span><span>thank</span><span>thin</span><span>thick</span><span>moth</span></div><br>
+					<div id="les12_6_2" class="interactive line line_button"><span>bath</span><span>path</span><span>Smith</span><span>cloth</span><span>tooth</span></div><br>
+					<div id="les12_6_3" class="interactive line line_button"><span>three</span><span>fifth</span><span>filth</span><span>bathroom</span><span>tenth</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.7</span>
+					<div id="les12_7_1" class="interactive line line_button"><span>they</span><span>that</span><span>this</span><span>bathe</span><span>the</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.8</span>
+					<div class="line line_button"><span>ai</span></div><br>
+					<div id="les12_8_1" class="interactive line line_button"><span>rain</span><span>train</span><span>gain</span><span>grain</span><span>stain</span></div><br>
+					<div id="les12_8_2" class="interactive line line_button"><span>nail</span><span>sail</span><span>fail</span><span>tail</span><span>rail</span></div><br>
+					<div id="les12_8_3" class="interactive line line_button"><span>main</span><span>chain</span><span>wail</span><span>pail</span><span>fain</span></div><br>
+					<div id="les12_8_4" class="interactive line line_button"><span>paid</span><span>maid</span><span>laid</span><span>wait</span><span>bait</span></div><br>
+					<div id="les12_8_5" class="interactive line line_button"><span>raid</span><span>rail</span><span>main</span><span>snail</span><span>rainy</span></div><br>
+					<div class="line line_button"><span>ay</span></div><br>
+					<div id="les12_8_6" class="interactive line line_button"><span>may</span><span>gay</span><span>day</span><span>ray</span><span>gray</span></div><br>
+					<div id="les12_8_7" class="interactive line line_button"><span>play</span><span>pay</span><span>say</span><span>pray</span><span>way</span></div><br>
+					<div id="les12_8_8" class="interactive line line_button"><span>stay</span><span>lay</span><span>tray</span><span>clay</span><span>hay</span></div><br>
+					<div class="line line_button"><span>ey</span></div><br>
+					<div id="les12_8_9" class="interactive line line_button"><span>grey</span><span>obey</span><span>they</span></div><br>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.9</span>
+					<div id="les12_9_1" class="interactive line line_button"><span>bay</span><span>gait</span><span>main</span><span>clay</span><span>say</span></div><br>
+					<div id="les12_9_2" class="interactive line line_button"><span>pain</span><span>they</span><span>stay</span><span>say</span><span>play</span></div><br>
+					<div id="les12_9_3" class="interactive line line_button"><span>may</span><span>wait</span><span>train</span><span>mail</span><span>gain</span></div><br>
+					<div id="les12_9_4" class="interactive line line_button"><span>pay</span><span>paid</span><span>way</span><span>grey</span><span>maid</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.10</span>
+					<div id="les12_10_1" class="interactive line line_button"><span>pay</span><span>pine</span><span>pie</span><span>wake</span><span>snake</span></div><br>
+					<div id="les12_10_2" class="interactive line line_button"><span>say</span><span>sane</span><span>lane</span><span>cane</span><span>claim</span></div><br>
+					<div id="les12_10_3" class="interactive line line_button"><span>bike</span><span>kite</span><span>Kate</span><span>pain</span><span>pine</span></div><br>
+					<div id="les12_10_4" class="interactive line line_button"><span>like</span><span>lake</span><span>lie</span><span>lame</span><span>laid</span></div><br>
+					<div id="les12_10_5" class="interactive line line_button"><span>stay</span><span>style</span><span>stale</span><span>stain</span><span>sky</span></div><br>
+					<div id="les12_10_6" class="interactive line line_button"><span>way</span><span>wake</span><span>wine</span><span>vain</span><span>vine</span></div><br>
+					<div id="les12_10_7" class="interactive line line_button"><span>type</span><span>tape</span><span>train</span><span>try</span><span>fly</span></div><br>
+					<div id="les12_10_8" class="interactive line line_button"><span>May</span><span>grey</span><span>grain</span><span>gate</span><span>wait</span></div><br>
+					<div id="les12_10_9" class="interactive line line_button"><span>day</span><span>die</span><span>dine</span><span>brave</span><span>brain</span></div><br>
+					<div id="les12_10_10" class="interactive line line_button"><span>wait</span><span>white</span><span>whale</span><span>waist</span><span>wake</span></div>
+				</td>
+			</tr>
+			<tr>
+			<td colspan="6">
+					<span class='number'>12.11</span>
+					<div id="les12_11_1" class="interactive marg phonetic"><span>friend [frend]</span></div><br>
+					<div id="les12_11_2" class="interactive marg phonetic"><span>table [teIbl]</span></div><br>
+					<div id="les12_11_3" class="interactive marg phonetic"><span>ice cream ["aIs 'krJm]</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>12.12</span>
+					<img class="ex12_12_left" src="additional_files/pictures/12_12_1.png">
+					<div id="les12_12_1" class="interactive ex12_12"><span>Who is this? — </span></div><br>
+					<div id="les12_12_2" class="interactive ex12_12"><span>This is my friend Nick.</span></div>
+				</td>
+				<td colspan="3">
+					<img class="ex12_12_right" src="additional_files/pictures/12_12_2.png">
+					<div id="les12_12_3" class="interactive ex12_12"><span>And who is that? —</span></div><br>
+					<div id="les12_12_4" class="interactive ex12_12"><span>That is my friend Cindy.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<img class="ex12_12_left" src="additional_files/pictures/12_12_3.png">
+					<div id="les12_12_5" class="interactive ex12_12"><span>What is this? — </span></div><br>
+					<div id="les12_12_6" class="interactive ex12_12"><span>This is a pig.</span></div>
+				</td>
+				<td colspan="3">
+					<img class="ex12_12_right" src="additional_files/pictures/12_12_4.png">
+					<div id="les12_12_7" class="interactive ex12_12"><span>And what is that? — </span></div><br>
+					<div id="les12_12_8" class="interactive ex12_12"><span>That is a rabbit. The rabbit is nice.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<img class="ex12_12_left" src="additional_files/pictures/12_12_5.png">
+					<div id="les12_12_9" class="interactive ex12_12"><span>What is this? — </span></div><br>
+					<div id="les12_12_10" class="interactive ex12_12"><span>This is a table. The table is white.</span></div>
+				</td>
+				<td colspan="3">
+					<img class="ex12_12_right" src="additional_files/pictures/12_12_6.png">
+					<div id="les12_12_11" class="interactive ex12_12"><span>And what is that? — </span></div><br>
+					<div id="les12_12_12" class="interactive ex12_12"><span>That is a desk. The desk is not big. It is black.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>12.13</span>
+					<div id="les12_13_1" class="interactive line line_button"><span>This is my (). His name is Nick. Nick is a () boy. He’s got a () and a (). He likes (). </span></div><br>
+					<div id="les12_13_2" class="interactive line line_button"><span>This is my (). The book is thick. I like books.</span></div><br>
+					<div id="les12_13_3" class="interactive line line_button"><span>That is Cindy. She is (). She’s got a () and a rabbit. The () is (). It’s very (). The () is (). It is very thin.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<div id="les12_14_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">12.14</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="6">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 13.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.1</span>
+					<div id="les13_1_1" class="interactive line line_button"><span>doctor</span><span>sister</span><span>driver</span><span>brother</span><span>mother</span></div><br>
+					<div id="les13_1_2" class="interactive line line_button"><span>diner</span><span>dinner</span><span>baker</span><span>paper</span><span>pepper</span></div><br>
+					<div id="les13_1_3" class="interactive line line_button"><span>father</span><span>deeper</span><span>keeper</span><span>better</span><span>letter</span></div><br>
+					<div id="les13_1_4" class="interactive line line_button"><span>latter</span><span>later</span><span>litter</span><span>Peter</span><span>matter</span></div><br>
+					<div id="les13_1_5" class="interactive line line_button"><span>grandmother</span><span>grandfather</span><span>stepmother</span><span>stepfather</span><span>stepbrother</span></div><br>
+					<div id="les13_1_6" class="interactive line line_button"><span>driver</span><span>doctor</span><span>teacher</span><span>tailor</span><span>weather</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.2</span>
+					<div id="les13_2_1" class="interactive line line_button"><span>or</span><span>ore</span><span>sore</span><span>more</span><span>core</span></div><br>
+					<div id="les13_2_2" class="interactive line line_button"><span>pork</span><span>port</span><span>sport</span><span>bored</span><span>cord</span></div><br>
+					<div id="les13_2_3" class="interactive line line_button"><span>for</span><span>shore</span><span>corn</span><span>cork</span><span>lord</span></div><br>
+					<div id="les13_2_4" class="interactive line line_button"><span>before</span><span>transport</span><span>store</span><span>more</span><span>door</span></div><br>
+					<div id="les13_2_5" class="interactive line line_button"><span>fork</span><span>born</span><span>sort</span><span>short</span><span>torn</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>13.3</span>
+					<div id="les13_3_1" class="interactive line line_button"><span>port — pot</span></div><br>
+					<div id="les13_3_2" class="interactive line line_button"><span>corn — con</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les13_3_3" class="interactive line line_button"><span>cord — cod</span></div><br>
+					<div id="les13_3_4" class="interactive line line_button"><span>cork — rock</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.4</span>
+					<div id="les13_4_1" class="interactive line line_button"><span>car</span><span>bar</span><span>tar</span><span>scar</span><span>star</span></div><br>
+					<div id="les13_4_2" class="interactive line line_button"><span>far</span><span>farm</span><span>arm</span><span>harm</span><span>charm</span></div><br>
+					<div id="les13_4_3" class="interactive line line_button"><span>mark</span><span>dark</span><span>bark</span><span>park</span><span>shark</span></div><br>
+					<div id="les13_4_4" class="interactive line line_button"><span>part</span><span>cart</span><span>dart</span><span>smart</span><span>start</span></div><br>
+					<div id="les13_4_5" class="interactive line line_button"><span>hard</span><span>lard</span><span>card</span><span>bard</span><span>pardon</span></div><br>
+					<div id="les13_4_6" class="interactive line line_button"><span>arm</span><span>art</span><span>arch</span><span>ark</span><span>dark</span></div><br>
+					<div id="les13_4_7" class="interactive line line_button"><span>mar</span><span>march</span><span>mark</span><span>mart</span><span>marsh</span></div><br>
+					<div id="les13_4_8" class="interactive line line_button"><span>car</span><span>cart</span><span>card</span><span>Carl</span><span>hard</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>13.5</span>
+					<div id="les13_5_1" class="interactive line line_button"><span>dark — duck</span></div><br>
+					<div id="les13_5_2" class="interactive line line_button"><span>mart — mutt</span></div><br>
+					<div id="les13_5_3" class="interactive line line_button"><span>bar — but</span></div><br>
+					<div id="les13_5_4" class="interactive line line_button"><span>lark — luck</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les13_5_5" class="interactive line line_button"><span>bark — buck</span></div><br>
+					<div id="les13_5_6" class="interactive line line_button"><span>car — cut</span></div><br>
+					<div id="les13_5_7" class="interactive line line_button"><span>hart — hut</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.6</span>
+					<div id="les13_6_1" class="interactive line line_button"><span>warm</span><span>warn</span><span>war</span><span>wart</span><span>ward</span></div><br>
+					<div id="les13_6_2" class="interactive line line_button"><span>wars</span><span>wardrobe</span><span>warm</span><span>warmer</span><span>warble</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.7</span>
+					<div id="les13_7_1" class="interactive line line_button"><span>stare</span><span>spare</span><span>share</span><span>scare</span><span>rare</span></div><br>
+					<div id="les13_7_2" class="interactive line line_button"><span>parents</span><span>care</span><span>fare</span><span>hare</span><span>stare</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>13.8</span>
+					<div id="les13_8_1" class="interactive line line_button"><span>star — stare</span></div><br>
+					<div id="les13_8_2" class="interactive line line_button"><span>sharp — share</span></div><br>
+					<div id="les13_8_3" class="interactive line line_button"><span>part — parents</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les13_8_4" class="interactive line line_button"><span>spark — spare</span></div><br>
+					<div id="les13_8_5" class="interactive line line_button"><span>car — care</span></div><br>
+					<div id="les13_8_6" class="interactive line line_button"><span>hard — hare</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les13_8_7" class="interactive line line_button"><span>far — fare</span></div><br>
+					<div id="les13_8_8" class="interactive line line_button"><span>march — mare</span></div><br>
+					<div id="les13_8_9" class="interactive line line_button"><span>scar — scare</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.9</span>
+					<div id="les13_9_1" class="interactive line line_button"><span>park</span><span>pork</span><span>part</span><span>port</span></div><br>
+					<div id="les13_9_2" class="interactive line line_button"><span>far</span><span>for</span><span>dark</span><span>door</span></div><br>
+					<div id="les13_9_3" class="interactive line line_button"><span>hard</span><span>before</span><span>sharp</span><span>shore</span></div><br>
+					<div id="les13_9_4" class="interactive line line_button"><span>carp</span><span>core</span><span>star</span><span>store</span></div><br>
+					<div id="les13_9_5" class="interactive line line_button"><span>lark</span><span>lord</span><span>card</span><span>cord</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>13.10</span>
+					<div id="les13_10_1" class="interactive line line_button"><span>park — spare — pork</span></div><br>
+					<div id="les13_10_2" class="interactive line line_button"><span>sharp — share — short</span></div><br>
+					<div id="les13_10_3" class="interactive line line_button"><span>star — stare — store</span></div><br>
+					<div id="les13_10_4" class="interactive line line_button"><span>harp — hare — horn</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les13_10_5" class="interactive line line_button"><span>far — fare — fork</span></div><br>
+					<div id="les13_10_6" class="interactive line line_button"><span>car — care — core</span></div><br>
+					<div id="les13_10_7" class="interactive line line_button"><span>spark — spare — sore</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>13.11</span>
+					<div id="les13_11_1" class="interactive line line_button"><span>— How are you?</span></div><br>
+					<div id="les13_11_2" class="interactive line line_button"><span>— I’m fine. And you?</span></div><br>
+					<div id="les13_11_3" class="interactive line line_button"><span>— I’m fine, too.</span></div><br>
+					<div id="les13_11_4" class="interactive line line_button"><span>— How is your sister Annie?</span></div><br>
+					<div id="les13_11_5" class="interactive line line_button"><span>— She is Ok.</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les13_11_6" class="interactive line line_button"><span>— And how are your brothers Jack and Peter?</span></div><br>
+					<div id="les13_11_7" class="interactive line line_button"><span>— They are good. They are at home today.</span></div><br>
+					<div id="les13_11_8" class="interactive line line_button"><span>— The weather is fine today.</span></div><br>
+					<div id="les13_11_9" class="interactive line line_button"><span>— Yes, it’s very warm and sunny.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<div id="les13_12_1" class="headphones interactive">
+							<img src="additional_files/pictures/headphones.png">
+					<div class="num">13.12</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>13.13</span>
+					<div id="les13_13_1" class="interactive line line_button"><span>1) I’m ________.</span></div><br>
+					<div id="les13_13_2" class="interactive line line_button"><span>2) The car is ________ from the ________.</span></div><br>
+					<div id="les13_13_3" class="interactive line line_button"><span>3) It isn’t ________.</span></div><br>
+					<div id="les13_13_4" class="interactive line line_button"><span>4) My mother is a ________.</span></div><br>
+					<div id="les13_13_5" class="interactive line line_button"><span>5) My father is a ________.</span></div><br>
+					<div id="les13_13_6" class="interactive line line_button"><span>6) My brother isn’t ________.</span></div><br>
+					<div id="les13_13_7" class="interactive line line_button"><span>7) This is my ________.</span></div><br>
+					<div id="les13_13_8" class="interactive line line_button"><span>8) It’s ________.</span></div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="6">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 14.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.1</span>
+					<div id="les14_1_1" class="interactive line line_button"><span>Ralph</span><span>phone</span><span>Philip</span><span>asphalt</span></div><br>
+					<div id="les14_1_2" class="interactive line line_button"><span>elephant</span><span>telephone</span><span>telegraph</span><span>phantom</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.2</span>
+					<div id="les14_2_1" class="interactive line line_button"><span>song</span><span>strong</span><span>long</span><span>along</span><span>tongs</span></div><br>
+					<div id="les14_2_2" class="interactive line line_button"><span>sing</span><span>thing</span><span>ring</span><span>bring</span><span>king</span></div><br>
+					<div id="les14_2_3" class="interactive line line_button"><span>clang</span><span>gang</span><span>rang</span><span>sang</span><span>hang</span></div><br>
+					<div id="les14_2_4" class="interactive line line_button"><span>slang</span><span>bang</span><span>banging</span><span>hanging</span><span>clanging</span></div><br>
+					<div id="les14_2_5" class="interactive line line_button"><span>reading</span><span>singing</span><span>string</span><span>sling</span><span>bringing</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.3</span>
+					<div id="les14_3_1" class="interactive line line_button"><span>sing</span><span>song</span><span>sang</span><span>sung</span><span>hang</span><span>hung</span></div><br>
+					<div id="les14_3_2" class="interactive line line_button"><span>sting</span><span>stung</span><span>string</span><span>strong</span><span>ding</span><span>dong</span></div><br>
+					<div id="les14_3_3" class="interactive line line_button"><span>sling</span><span>slang</span><span>ring</span><span>rang</span><span>rung</span><span>ringing</span></div><br>
+					<div id="les14_3_4" class="interactive line line_button"><span>bring</span><span>bang</span><span>bringing</span><span>banging</span><span>reading</span><span>singing</span></div><br>
+					<div id="les14_3_5" class="interactive line line_button"><span>king</span><span>long</span><span>longing</span><span>lung</span><span>clang</span><span>strong</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span class='number'>14.4</span>
+					<div id="les14_4_1" class="interactive line line_button"><span>king — kin</span></div><br>
+					<div id="les14_4_2" class="interactive line line_button"><span>thing — thin</span></div><br>
+					<div id="les14_4_3" class="interactive line line_button"><span>along — alone</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les14_4_4" class="interactive line line_button"><span>rang — ran</span></div><br>
+					<div id="les14_4_5" class="interactive line line_button"><span>sing — sin</span></div><br>
+					<div id="les14_4_6" class="interactive line line_button"><span>song — zone</span></div>
+				</td>
+				<td colspan="2">
+					<div id="les14_4_7" class="interactive line line_button"><span>bang — ban</span></div><br>
+					<div id="les14_4_8" class="interactive line line_button"><span>clang — clan</span></div><br>
+					<div id="les14_4_9" class="interactive line line_button"><span>gang — gun</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.5</span>
+					<div id="les14_5_1" class="interactive line line_button"><span>finger</span><span>hungry</span><span>angle</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.6</span>
+					<div id="les14_6_1" class="interactive line line_button"><span>ink</span><span>drink</span><span>pink</span><span>sink</span><span>think</span></div><br>
+					<div id="les14_6_2" class="interactive line line_button"><span>bank</span><span>sank</span><span>thank</span><span>rank</span><span>blank</span></div><br>
+					<div id="les14_6_3" class="interactive line line_button"><span>bunk</span><span>sunk</span><span>junk</span><span>drank</span><span>wink</span></div><br>
+					<div id="les14_6_4" class="interactive line line_button"><span>sinking</span><span>winking</span><span>thinking</span><span>thanking</span><span>drinking</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.7</span>
+					<div id="les14_7_1" class="interactive line line_button"><span>knob</span><span>knit</span><span>knee</span><span>knelt</span></div><br>
+					<div id="les14_7_2" class="interactive line line_button"><span>knave</span><span>knife</span><span>knot</span><span>knock</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.8</span>
+					<div id="les14_8_1" class="interactive line line_button"><span>think</span><span>thing</span><span>stink</span><span>thinking</span><span>winking</span></div><br>
+					<div id="les14_8_2" class="interactive line line_button"><span>knife</span><span>know</span><span>knit</span><span>knock</span><span>knee</span></div><br>
+					<div id="les14_8_3" class="interactive line line_button"><span>phone</span><span>elephant</span><span>Philip</span><span>asphalt</span><span>photo</span></div><br>
+					<div id="les14_8_4" class="interactive line line_button"><span>finger</span><span>king</span><span>angry</span><span>hungry</span><span>anger</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>14.9</span>
+					<div id="les14_9_1" class="interactive line line_button"><span>bind</span><span>blind</span><span>find</span><span>kind</span><span>mind </span></div><br>
+					<div id="les14_9_2" class="interactive line line_button"><span>child</span><span>mild</span><span>wild</span><span>find</span><span>bind</span></div><br>
+					<div id="les14_9_3" class="interactive line line_button"><span>phone</span><span>king</span><span>hungry</span><span>knife</span><span>thing </span></div><br>
+					<div id="les14_9_4" class="interactive line line_button"><span>thick</span><span>angry</span><span>elephant</span><span>know</span><span>thank</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>14.10</span>
+					<div id="les14_10_1" class="interactive line line_button"><span>My mother is kind.</span></div><br>
+					<div id="les14_10_2" class="interactive line line_button"><span>This is a photo of my friend Philip.</span></div><br>
+					<div id="les14_10_3" class="interactive line line_button"><span>I know his brother. He’s a doctor.</span></div><br>
+					<div id="les14_10_4" class="interactive line line_button"><span>Are they fat? — No, they aren’t.</span></div><br>
+					<div id="les14_10_5" class="interactive line line_button"><span>I am hungry. Are you hungry? — No, I’m not.</span></div><br>
+					<div id="les14_10_6" class="interactive line line_button"><span>This child is angry, those children are happy.</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les14_10_7" class="interactive line line_button"><span>This elephant is very big.</span></div><br>
+					<div id="les14_10_8" class="interactive line line_button"><span>Thank you. You are very kind.</span></div><br>
+					<div id="les14_10_9" class="interactive line line_button"><span>This street is long.</span></div><br>
+					<div id="les14_10_10" class="interactive line line_button"><span>Is she happy? — Yes, she is.</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>14.11</span>
+					<div id="les14_11_1" class="interactive line line_button"><span>1) My sister is ________ .</span></div><br>
+					<div id="les14_11_2" class="interactive line line_button"><span>2) This is a big ________ .</span></div><br>
+					<div id="les14_11_3" class="interactive line line_button"><span>3) Philip and I are ________.</span></div><br>
+					<div id="les14_11_4" class="interactive line line_button"><span>4) This ________ is very nice.</span></div><br>
+					<div id="les14_11_5" class="interactive line line_button"><span>5) Is your dog  ________?</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les14_11_6" class="interactive line line_button"><span>6) Are you ________?</span></div><br>
+					<div id="les14_11_7" class="interactive line line_button"><span>7) His cat is ________.</span></div><br>
+					<div id="les14_11_8" class="interactive line line_button"><span>8) I ________ his brother.</span></div><br>
+					<div id="les14_11_9" class="interactive line line_button"><span>9) This street is ________.</span></div><br>
+					<div id="les14_11_10" class="interactive line line_button"><span>10) His ________ are in Britain.</span></div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<th colspan="12">
+				<img id="les1" src="additional_files/pictures/lesson.png">
+				<div class="unit">
+					<img src="additional_files/pictures/unit.png">
+					<span><strong>Урок 15.</strong></span>
+				</div>
+			</th>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.1</span>
+					<div id="les15_1_1" class="interactive line line_button"><span>her</span><span>herd</span><span>herb</span><span>verb</span><span>term</span></div><br>
+					<div id="les15_1_2" class="interactive line line_button"><span>fir</span><span>sir</span><span>stir</span><span>bird</span><span>girl</span></div><br>
+					<div id="les15_1_3" class="interactive line line_button"><span>curl</span><span>curd</span><span>curb</span><span>hurt</span><span>hurl</span></div><br>
+					<div id="les15_1_4" class="interactive line line_button"><span>nurse</span><span>purse</span><span>fur</span><span>turn</span><span>burn</span></div><br>
+					<div id="les15_1_5" class="interactive line line_button"><span>first</span><span>burst</span><span>firm</span><span>church</span><span>cur</span></div><br>
+					<div id="les15_1_6" class="interactive line line_button"><span>lurk</span><span>Turk</span><span>perch</span><span>fern</span><span>verb</span></div><br>
+					<div id="les15_1_7" class="interactive line line_button"><span>birch</span><span>dirt</span><span>her</span><span>girl</span><span>nurse </span></div><br>
+					<div id="les15_1_8" class="interactive line line_button"><span>shirt</span><span>stir</span><span>bird</span><span>burn</span><span>first</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.2</span>
+					<div id="les15_2_1" class="interactive line line_button"><span>under</span><span>verb</span><span>mother</span><span>her</span><span>herd </span></div><br>
+					<div id="les15_2_2" class="interactive line line_button"><span>herb</span><span>charter</span><span>term</span><span>smarter</span><span>harder </span></div><br>
+					<div id="les15_2_3" class="interactive line line_button"><span>stern</span><span>sister</span><span>brother</span><span>verb</span><span>driver</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<span class='number'>15.3</span>
+					<div id="les15_3_1" class="interactive line line_button"><span>burn — born</span></div><br>
+					<div id="les15_3_2" class="interactive line line_button"><span>sir — sore</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les15_3_3" class="interactive line line_button"><span>fur — for</span></div><br>
+					<div id="les15_3_4" class="interactive line line_button"><span>stir — store</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les15_3_5" class="interactive line line_button"><span>turn — Torn</span></div><br>
+					<div id="les15_3_6" class="interactive line line_button"><span>firm — form</span></div>
+				</td>
+				<td colspan="3">
+					<div id="les15_3_7" class="interactive line line_button"><span>bird — bored</span></div><br>
+					<div id="les15_3_8" class="interactive line line_button"><span>shirt — shore</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.4</span>
+					<div id="les15_4_1" class="interactive line line_button"><span>worm</span><span>work</span><span>world</span><span>worth</span><span>word</span></div><br>
+					<div id="les15_4_2" class="interactive line line_button"><span>worse</span><span>worst</span><span>worthy</span><span>worker</span><span>workman</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<span class='number'>15.5</span>
+					<div id="les15_5_1" class="interactive line line_button"><span>worm — warm</span></div><br>
+					<div id="les15_5_2" class="interactive line line_button"><span>ward — word</span></div>
+				</td>
+				<td colspan="4">
+					<div id="les15_5_3" class="interactive line line_button"><span>work — warn</span></div><br>
+					<div id="les15_5_4" class="interactive line line_button"><span>worth — wart</span></div>
+				</td>
+				<td colspan="4">
+					<div id="les15_5_5" class="interactive line line_button"><span>world — war</span></div><br>
+					<div id="les15_5_6" class="interactive line line_button"><span>wars — worse</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.6</span>
+					<div id="les15_6_1" class="interactive line line_button"><span>quick</span><span>squirrel</span><span>queen</span><span>squeeze</span><span>quit</span></div><br>
+					<div id="les15_6_2" class="interactive line line_button"><span>quote</span><span>quest</span><span>quickly</span><span>quack</span><span>queen</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.7</span>
+					<div id="les15_7_1" class="interactive line line_button"><span>girl</span><span>nurse</span><span>bird</span><span>quick</span><span>queen</span></div><br>
+					<div id="les15_7_2" class="interactive line line_button"><span>her</span><span>warm</span><span>work</span><span>doctor</span><span>thristy</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.8</span>
+					<div id="les15_8_1" class="interactive line line_button"><span>ox</span><span>fox</span><span>box</span><span>text</span><span>taxi</span></div><br>
+					<div id="les15_8_2" class="interactive line line_button"><span>wax</span><span>fax</span><span>oxtail</span><span>relax</span><span>Rex</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.9</span>
+					<div id="les15_9_1" class="interactive line line_button"><span>all</span><span>ball</span><span>fall</span><span>tall</span><span>hall</span><span>call</span></div><br>
+					<div id="les15_9_2" class="interactive line line_button"><span>wall</span><span>stall</span><span>small</span><span>call</span><span>ball</span><span>fall</span></div><br>
+					<div id="les15_9_3" class="interactive line line_button"><span>calling</span><span>falling</span><span>mall</span><span>stalling</span><span>recall</span><span>recalling</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.10</span>
+					<span id="les15_10_1" class="interactive line">My mother is a nurse.</span>
+					<span id="les15_10_2" class="interactive line">This girl is nice.</span>
+					<span id="les15_10_3" class="interactive line">They work at <br>
+																	home. </span>
+					<span id="les15_10_4" class="interactive line">Say it quickly.</span>
+					<span id="les15_10_5" class="interactive line">Her pencil is in the box.</span><br>
+					<span id="les15_10_6" class="interactive line">The fox is small.</span>
+					<span id="les15_10_7" class="interactive line">This text is long.</span>
+					<span id="les15_10_8" class="interactive line">The queen is fat.</span><br>
+					<span id="les15_10_9" class="interactive line">The bird is in the tree.</span>
+					<span id="les15_10_10" class="interactive line">My brother has <br>
+																	got a ball.</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.11</span>
+					<div id="les15_11_1" class="interactive marg phonetic"><span>our — ['aVq]</span></div>
+					<div id="les15_11_2" class="interactive marg phonetic"><span>their — ['Deq]</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<span class='number'>15.12</span>
+					<div id="les15_12_1" class="interactive line line_button"><span>my</span></div><br>
+					<div id="les15_12_2" class="interactive line line_button"><span>our</span></div><br>
+					<div id="les15_12_3" class="interactive line line_button"><span>her</span></div><br>
+					<div id="les15_12_4" class="interactive line line_button"><span>its</span></div>
+				</td>
+				<td colspan="6">
+					<div id="les15_12_5" class="interactive line line_button"><span>your</span></div><br>
+					<div id="les15_12_6" class="interactive line line_button"><span>their</span></div><br>
+					<div id="les15_12_7" class="interactive line line_button"><span>his</span></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="12">
+					<span class='number'>15.13</span>
+					<div id="les15_13_1" class="interactive line line_button"><span>1) We ________ ‘Good bye!’ </span></div><br>
+					<div id="les15_13_2" class="interactive line line_button"><span>2) Can you say it ________? </span></div><br>
+					<div id="les15_13_3" class="interactive line line_button"><span>3) My mother is a ________. </span></div><br>
+					<div id="les15_13_4" class="interactive line line_button"><span>4) The ________ has got three children. </span></div><br>
+					<div id="les15_13_5" class="interactive line line_button"><span>5) A ________ is sitting on the table. </span></div><br>
+					<div id="les15_13_6" class="interactive line line_button"><span>6) This ________ is ________. </span></div><br>
+					<div id="les15_13_7" class="interactive line line_button"><span>7) Her ________ is round. </span></div><br>
+					<div id="les15_13_8" class="interactive line line_button"><span>8) This ________ is good.</span></div>
+				</td><br>
+			</tr>
+		</table>
+	</div>
+        </div>
+	
+	
+</div>
+<!--
+<div class="loading-indicator">
+<img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAADAFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAFAAALAgIUAwUaBgchBgojBgspBwwsCQwvCgwzDQyfDkE4Dg6VDzw+Dw+REDmhEEH7EG6LEjSnEkLuEmXzEmj4EmvJE1LJE1LOE1TwE2aMFDN0FCfqFGJjFB5uFCNNFRJJFRB8FSqsFUFJFRHQFlJKFhCwF0HFF0zpF1+FFy1SGBOOGS9XGRRiGRm2GUPqGV7FGkmLGi6PGi/VHE/rHFuIHSqRHS2+HkPBH0T/H2PsIFmTICzXIUySIin+I2DuJFf/Jl7vJ1SYJymcJyv/KFveKUnvKlL/Klv/K1ruLE//LFn/LFidLSWXLSP/LVfgLkb+Llb/L1abMCPlMEfqMEroMEn+MFWZMiD+MlT+M1KnNCX9NVGeNh/9NlD9N0/8OE21OSebORu2Oif8OkzEOy38O0rEPCyjPRz8PUn+PkjKPyylQBv/QEfBQSa/QyOtQxuqRBn/RkL+R0DnRzXiSTHeSS/pSjP+Sj7gSi/sTDT9TDzLTCPeTSzITSD9TzrITx/JTx/sUDDQUCLgUSr9UjjtVC3+VDf/VjXfVSbXViHUVSHdWCL/WTPfWSP+WzHtXCf+XDD9XC/9Xy3uYiL+YivvZCL/Zij/ZyfwaB//aSX/ayTyah70bB3/bSL/biH/cCD3bxz/cR/4chv8dBr9dhn/eBn/eBn/dxr/dxr/dhv/dRv/dBz/dRv/cx3/bCP/WjL/RET/QkX/Qkb/QEf/IWL/HWX/G2b/GWj/GGn/Fmv/Em7/EW//D3D/DXL/DXJQhKYPAAAA6HRSTlMAAAAAAAAAAAAAAAABAQEAAAEAAAEBBwkJCQkJCQ0QERISFBUWGBkaHB0eHh8iJScoKSstMDEzNTc7PD9CQ0VGR0ZHSEdISEdCQTuAOX05eIb4dYnc6PKmq7DgdFnTXl1LPVSLU7BEjaLSTld3XV+P0p1FPrPVNHeRmf7UN7J6/NX+0305/bTR/v7O/v5Dff63+/2Au8bB+377+Ev5gfj39VN+Wfdh92iE+PxuhP10e4CF/vzQyr/U/MXW+6W+o/uiotaquPvX/f64r6qz/rT91/z6+tf82v3+2v7+3uH+/v7n/uv0+f3+2itESgAACj1JREFUeAGMlAVTI1sWx/kOW33L+hZ1I9PBIULwLmQqywZ3ScZxt+DuMILvhHF3w21ckll5bh8jFBYae+f2U2DslETPr4/9/w7/+FgwqNRojOJYhr5nEMYI3u2PTwBwzrpgVBLE0PdlyWUEWJ8HMAixSMxBZWt2uxDvhhmGwfE7O7HuBH0ewKC2jqoowtKk8lUgrBucMIvjt3d2dgwK9gsAbE93V1OuApJya2ooIc3gZkrd3Nra2dF7YObzADJ6prervd7gnNu0Qglr9qSMJGGDEpLVhLZG4+MAJB09QwntTY2NK40VxeUZGTkwS2FjAwi+HBLXgVnEfBQgHx0YONPb3d5ff/wQL0ZQYIghxhgLRei9pNhRb0xM5vDHASbzv4HQkR8SZMgqr62tqIAqsiN1fJg+YTNWr0/eoREuRXsBUBoL60P4htlsHjnEG6qb2pubmxtXxEHY13PidXxkwhYsg4ZOwe4FINO9e22cTKYYOt95iD88BF109dfWFx2PzyrJqFiFdSYl64L1sVsiwN9pL4BhR5aWl+9c7rl8sSNM1wdttFQfDvDVqlVKpUqjDYvMsK8LSfHBh8QiEvw4tBeAJ5aAsHz3bmtg5WWzubMy2EflrpARGDkhMid3lS47SRCMhlBKSPaR7Qf0LS7SGhqCq6+fv5wVqHXnCIaTFgNGQzgPXYYgJEUGxWxtJ3tL9gNOjQHhQUNI3927wzofDzlGfz8Xuv4DXnGJgqAPTN5K0HIYUfrfh8jNAWGQ71te7gvROP+RvgtBXI8YgRCcHBuTG8XJJATu6S+AZGpsrI+vXlquDlDKWUjfF7SIf+YIQmRYAlwlRHIERn/dAXk0MxfaurjUF6CU7tM9IwbsShaVJiTq4mK3xIvQyxEjAuicpAszDbrxsYlQlRQx+59dhykVCIYkIScwHu4aCAZnFgD0BjE59WZ+KmhqbPyIBurf+2j2VlNzGUHivRzQ2wV9WBIliOcAAPbcozdzludvCwpnZgZ9Xf+ueWCb4MDburvaqzhWhGHXDHtaSPzGxmbCQRWhAHTj/1ar1WKZ4qfm54I9d9kW09bZIcPsjd6m9BAFZlkYOyIGuz0+NFHY0PsqWLoF/Mj2f0BYGgrePh/UHtg1AGQ6f9lTik1nWnita1V9Va6cYOyUsZbGpwppwV5isQ6s6Tub7f/Wt8ELlrkQ992mhcjw+WOuxHW0v76lshTk2VSS6+hsWFuLjhRS/OgIaQvSc5Qwxb+yLPhwuwqAeqvOV3u1jYgWoS5povpuNKgq1lKC0owhMC5GHCJ37Vub7WyB1VqoIrvzHetyz/doS8EiRuvTle7K8PT6ppUiTUlNBZ9hzzFw9GAdQAfOj761nbhtfRvwZwcMomEaXh66fF2n6qgyj/JaBZE4eYU3NZdrwK8PHgeLSM6VY9aBKsnz3Xf8wv8nfRXirqn62u6ZCL7xm8DV7poe82EvAl9HtbQ36bz+1VgTF70GPiWkRsgpgFW8fxc0a1vQyhA828S23bsyPzZe6npvaaJw4m6fRqGoMlfDzJGps6spXM05Qx+6VZGQrIQWGHzvx/eB72zPwPfhT5Ome/NzMzNjE94Pl/r4wruXgzlSer5HLUGmnjP9Bm8FltWuZAfX1FBCjLcDHPqjH398H/TNt7dVBOb2xvIw8/n8RMP82OmGxSF/n4llWKTj5YvhCtw2MJquBamT+sZyvpG6bUqAEu7gq19+/vk//Pff3lZihBeslrPauecL/ODMVNj4HV9V9XK1J5H2nW91J6SzUuMGk8f1zb8WXhawbWt9FK+Y8ZMt8tV0Q3Z54WTkMmnKJ8anYTROnuDRmJmZyR1T5tIruOAycwPN0uA4pYEY3r3OOK1qMdyffc/933OOEeDzlj//v1BNJ1wNekfd7g62f4TXQODoab9u1Aj1wsKcmsq8spJV2vsfz+sV8P6jUxoZ+CtFOjlwYPd2BNiaZ0qFVIJnchIR+hGgTqd83Nf3wJxGF7eVmbQVlSfOlpwyrfr4tDARWu7c0imoWKgR8OD+zezOXdlGBuESev2YMMx2uDqNtwf7HizWyEFRS0uh1lEjWCtLz56a/oi+XnHhvEVOxnKVkF05vDp/9+8maRQTirrCY5NeV6bo6jdfHel/YNOoINPcLpgc9RWLhcqSkrLpc2kAKPHXf71iJ48u27T/iJGWbqMyrUhEBBvnduXoh0YGBgabHRZHe8ulivqKBUXVlaU7NtuR8tT3jkTdPXM6e/Oh/avTAAZQQJm+ZniSLxx1c4Y1zzuGBgamHGuwQ7QJhtSljh1mbRIkf2gFSMOLR9gDyGRQeYlZGmByXvQuHh7tNqSmarI4obXZ2NpT295iT5NBJoWB4GeTmHfr8ubs07hFrFJRBB5l5FO+sXze6ypIgVCVqtauVAs9ddZcjYKSMpv4uQShAC/8+wzuIbsKZKTkytTtUIAv9Hob0gGJLRYqi6eqFqH1WPO49nf+2nn21EWph6xiKAkAPROhYbZr0lWkImNZWDQ4mJsK4vMFv+zatU3Lrkk95EgOjQEE5YhGJ0KcdWyyC13aWFA1D3ApMxVL0nLk0Xn2wLXLB7dv+s2cBvEWyOORN++iEx5W9I9xMVsnwLPWZ8wMAAL88+mefdnN88tYsy6dgVhEgup6/RoT+Kxhv2+NSto4KUvBhxe/gbtPP21mLzxaZp5PQzzYXwGYENloi/iHLTHp8NzPsH7fw4/ns/c+erRMK/sW7wRp4bu7Pb5I1JPFBb4QCOmJW3/14fS9fPu9T4/2qr/aJ9YAMGqDyZzDR7sX8QG/Z40KkDPH+93SklJ7fjWyynN6SH4F4ASEMoUqVed7Jy5GhODzFDhTwbAIlZXVtpwyqQvl098BMSNG3+F5807M5MJ+f+8aVXzFuV2NnG5FYRnuQh8/7UVT8ktTJeVhJGV3jrXX7/f2Ho+JjB+c//OKy9vaWoQsW3VliUQ4NT8esPQVPgyPfTEfRCYzLF5dqoQQ17y/7gqD6HqW29mzNTUVQkVZKTaZeMDt1/g430TF7Cz+hR/ZlMvZ0dvb0d8/MIDCs/wEu7Givt6+0GQwZdpWaFXUrwDKgQEIEQ3yOSwnOr1eN/LrkZGRgaHWOitrFVra2upZLSNX0EmJCuxPvwCeodXhTs7KRaJh0b6Ezef4hqbOpron9mw2i6sdxD3k34UpuCJSWJ5fAeQ8sYvPWqBXa0U016FgJ8/lsOjJtHINyKempB5SZVaRs/3yEIBOU+OGK1+D5joaCgWwDi+GXHgbTZ2DU7iHVJkUswOwceLjJ2kfkhJ9RCcfRAgsRN0iU4GAe0itQUbMBvj2P0XAbixl2LbIuDFG6M/SpSSpba1TU9fVYHbA973wSE5fPoqo1GLk+N5RzkQDCjDaS5yeoeYG/I9aGXntyTUkAhIkikgIJ5sGcN+EdJISn96cABKu5MxaGi8CRR7/JGdQkMT3v+K5AehdTKL8izOt7OIX/tL+5gYQ0qTEWLTWoFaQswP+A8bPUkIGD/kgAAAAAElFTkSuQmCC"/>
+</div>
+-->
+
+</body>
+</html>
+
